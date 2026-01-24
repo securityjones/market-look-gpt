@@ -17,16 +17,20 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
   - [x] NAHL interpretation rules
 - [x] Collect aspirational output example
 
-### Phase 2: GPT Configuration
-- [ ] Draft system instructions
-- [ ] Create conversation starters
-- [ ] Compile knowledge files for upload
+### Phase 2: GPT Configuration ✅
+- [x] Draft system instructions
+- [x] Create conversation starters
+- [x] Compile knowledge files for upload
+- [x] Deploy V1 to OpenAI Custom GPT
 
-### Phase 3: Testing & Iteration
-- [ ] Test with sample charts
-- [ ] Compare outputs to aspirational sample
-- [ ] Refine instructions based on results
-- [ ] Adjust chart interpretation rules as needed
+### Phase 3: Testing & Iteration 🔄 (In Progress)
+- [x] Test V1 with sample charts
+- [x] Compare outputs to aspirational sample
+- [x] Identify issues (chart interpretation, ordering, tone)
+- [x] Refine instructions based on results (V2)
+- [x] Adjust chart interpretation rules as needed
+- [ ] Test V2 with sample charts
+- [ ] Iterate until output meets success criteria
 
 ### Phase 4: Deployment
 - [ ] Finalize GPT configuration
@@ -47,6 +51,13 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
 
 | File | Purpose | Status |
 |------|---------|--------|
-| tone-and-style-guide.md | Voice, editorial rules | ✅ Complete |
-| output-format-guide.md | Report structure | ✅ Complete |
-| chart-reference-guide.md | Interpretation rules | ✅ Complete |
+| tone-and-style-guide.md | Voice, editorial rules | ✅ V2 (added observable vs analytical, Jeff's Mother test) |
+| output-format-guide.md | Report structure | ✅ V2 (added chart ordering, good/bad examples) |
+| chart-reference-guide.md | Interpretation rules | ✅ V2 (marked authoritative) |
+
+## GPT Configuration
+
+| File | Purpose | Status |
+|------|---------|--------|
+| instructions.md | System instructions with task routing | ✅ V2 |
+| conversation-starters.md | User prompts | ✅ V1 |

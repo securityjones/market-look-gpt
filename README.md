@@ -28,7 +28,7 @@ Market Look GPT takes stock chart images as input and produces monthly market an
 │   └── outputs/                # Example/aspirational outputs
 │
 ├── gpt-config/                 # GPT configuration
-│   ├── instructions.md         # System instructions (to develop)
+│   ├── instructions.md         # System instructions (V2)
 │   └── conversation-starters.md
 │
 ├── .gitignore
@@ -55,15 +55,15 @@ Market Look GPT takes stock chart images as input and produces monthly market an
 
 ## Development Status
 
-📋 **Phase 1: Foundation** — Complete
-- [x] Project structure created
-- [x] Tone and style guide documented
-- [x] Output format guide documented
-- [x] Chart reference guide with interpretation rules
-- [x] Sample charts collected
-- [x] Aspirational output example
+✅ **Phase 1: Foundation** — Complete
 
-🔜 **Phase 2: GPT Configuration** — Next
-- [ ] Draft system instructions
-- [ ] Create conversation starters
-- [ ] Test with sample charts
+✅ **Phase 2: GPT Configuration** — Complete
+- [x] System instructions drafted
+- [x] Conversation starters created
+- [x] V1 deployed to OpenAI
+
+🔄 **Phase 3: Testing & Iteration** — In Progress
+- [x] V1 tested with sample charts
+- [x] Issues identified and documented
+- [x] V2 revisions applied
+- [ ] V2 testing pending

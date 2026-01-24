@@ -103,7 +103,52 @@ Every article must be readable and meaningful to someone who:
 
 If a sentence would require the reader to know a market term to understand it, that sentence must be rewritten.
 
+**The "Jeff's Mother" Test:**
+If a sentence would not be clear to Jeff's mother — someone smart and curious but unfamiliar with markets — rewrite it.
+
 This rule applies globally and overrides analytical convenience.
+
+## Abstraction Ban
+
+Do not use abstract market labels. Replace abstractions with descriptions of observable behavior.
+
+**Forbidden words include (not exhaustive):**
+- confirmation
+- support (as a noun)
+- durability
+- leadership
+- strength / weakness
+- expansion / contraction
+- momentum
+- posture
+- participation
+- concentration
+- conviction
+- regime
+- rotation
+
+This list is illustrative. Avoid similar abstractions even if not listed. If a word describes a concept rather than an observable behavior, find a concrete alternative.
+
+**Instead of:**
+- "Leadership remains narrow" → "A few large stocks are doing most of the work"
+- "Participation is improving" → "More stocks are rising than before"
+- "Momentum is fading" → "The pace of gains has slowed"
+- "The regime has shifted" → "Conditions have changed"
+
+**Observable vs Analytical:**
+
+Describe things a reader could *see* on a chart, not conclusions they'd need expertise to interpret.
+
+| ❌ Analytical (avoid) | ✅ Observable (prefer) |
+|----------------------|------------------------|
+| "Stress in the system stayed contained" | "Large price swings have faded" |
+| "Internal comparisons softened" | "Several areas that were falling have stopped falling" |
+| "Balance between stocks and safer assets" | "Stocks compared to bonds" or describe the behavior directly |
+| "Parts of the market pulling ahead" | Name them: "Large tech companies" or "A handful of big stocks" |
+
+If you're describing a relationship, name the things being compared. If you're describing a trend, say what moved and which direction.
+
+Describe what you can see on the chart. Never assign intent or use shorthand that assumes market knowledge.
 
 ## Editorial Discipline (Jeff's House Rules)
 
