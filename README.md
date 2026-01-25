@@ -28,7 +28,7 @@ Market Look GPT takes stock chart images as input and produces monthly market an
 │   └── outputs/                # Example/aspirational outputs
 │
 ├── gpt-config/                 # GPT configuration
-│   ├── instructions.md         # System instructions (V2)
+│   ├── instructions.md         # System instructions (V7)
 │   └── conversation-starters.md
 │
 ├── .gitignore
@@ -62,8 +62,30 @@ Market Look GPT takes stock chart images as input and produces monthly market an
 - [x] Conversation starters created
 - [x] V1 deployed to OpenAI
 
-🔄 **Phase 3: Testing & Iteration** — In Progress
-- [x] V1 tested with sample charts
-- [x] Issues identified and documented
-- [x] V2 revisions applied
-- [ ] V2 testing pending
+✅ **Phase 3: Testing & Iteration** — Complete
+- [x] V1-V7 tested with sample charts
+- [x] Issues identified and resolved
+- [x] Model requirement discovered
+- [x] Plain-language rules finalized
+
+✅ **Phase 4: Deployment** — Complete
+- [x] Configuration finalized
+- [x] Market Look GPT deployed
+
+🔜 **Phase 5: Portfolio Analysis** — Next
+- [ ] Define requirements
+- [ ] Design output format
+- [ ] Implement Task 2
+
+## ⚠️ Model Requirement
+
+**Market Look GPT requires a thinking-enabled model.**
+
+**Recommended:** ChatGPT 5.2 Thinking (tested and confirmed working)
+
+Non-thinking models (ChatGPT 5.2 standard) fail at chart interpretation:
+- Miss crossovers and MA relationships
+- Invert signals (report bearish as bullish)
+- Guess rather than read visual data
+
+Thinking models accurately read charts and follow the knowledge file rules.

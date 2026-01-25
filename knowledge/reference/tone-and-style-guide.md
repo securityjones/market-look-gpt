@@ -126,6 +126,7 @@ Do not use abstract market labels. Replace abstractions with descriptions of obs
 - conviction
 - regime
 - rotation
+- equities (use "stocks" instead)
 
 This list is illustrative. Avoid similar abstractions even if not listed. If a word describes a concept rather than an observable behavior, find a concrete alternative.
 

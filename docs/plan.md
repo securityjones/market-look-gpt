@@ -23,19 +23,37 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
 - [x] Compile knowledge files for upload
 - [x] Deploy V1 to OpenAI Custom GPT
 
-### Phase 3: Testing & Iteration 🔄 (In Progress)
+### Phase 3: Testing & Iteration ✅
 - [x] Test V1 with sample charts
 - [x] Compare outputs to aspirational sample
 - [x] Identify issues (chart interpretation, ordering, tone)
-- [x] Refine instructions based on results (V2)
+- [x] Refine instructions based on results (V2-V5)
 - [x] Adjust chart interpretation rules as needed
-- [ ] Test V2 with sample charts
-- [ ] Iterate until output meets success criteria
+- [x] Discover model requirement (thinking mode essential)
+- [x] Validate with thinking model
 
-### Phase 4: Deployment
-- [ ] Finalize GPT configuration
-- [ ] Deploy to OpenAI
-- [ ] Document usage guidelines
+### Phase 4: Deployment ✅
+- [x] Finalize GPT configuration
+- [x] Deploy Market Look GPT to OpenAI
+- [x] Document usage guidelines
+
+### Phase 5: Portfolio Analysis Capability 🔜 (Next)
+- [ ] Define portfolio analysis requirements
+- [ ] Design output format for portfolio reports
+- [ ] Create knowledge file for portfolio interpretation
+- [ ] Update instructions.md with Task 2 logic
+- [ ] Test with sample portfolio data
+- [ ] Iterate and refine
+
+## Model Requirement
+
+⚠️ **Market Look GPT requires a thinking-enabled model.**
+
+**Recommended:** ChatGPT 5.2 Thinking (tested and confirmed working)
+
+Non-thinking models (ChatGPT 5.2 standard) fail at chart interpretation — they guess or assume rather than accurately reading visual data. Testing showed:
+- Non-thinking (5.2): Missed crossovers, inverted MA relationships, wrong signal strength
+- Thinking (5.1, 5.2): Accurate chart reading, correct crossover detection, proper signal mapping
 
 ## Success Criteria
 
@@ -51,13 +69,13 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
 
 | File | Purpose | Status |
 |------|---------|--------|
-| tone-and-style-guide.md | Voice, editorial rules | ✅ V2 (added observable vs analytical, Jeff's Mother test) |
-| output-format-guide.md | Report structure | ✅ V2 (added chart ordering, good/bad examples) |
-| chart-reference-guide.md | Interpretation rules | ✅ V2 (marked authoritative) |
+| tone-and-style-guide.md | Voice, editorial rules, forbidden words | ✅ V7 |
+| output-format-guide.md | Report structure, plain-language rules | ✅ V7 |
+| chart-reference-guide.md | Interpretation rules (AUTHORITATIVE) | ✅ V2 |
 
 ## GPT Configuration
 
 | File | Purpose | Status |
 |------|---------|--------|
-| instructions.md | System instructions with task routing | ✅ V2 |
+| instructions.md | System instructions with task routing | ✅ V7 |
 | conversation-starters.md | User prompts | ✅ V1 |

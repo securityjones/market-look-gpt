@@ -2,4 +2,4 @@
 
 **"Generate my monthly Market Look report"**
 
-**"Analyze my portfolio"**
+**"Generate my portfolio update"**

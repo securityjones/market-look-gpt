@@ -135,7 +135,9 @@ The market's expectation of near-term volatility, often called the "fear gauge."
 ### NAHL (New Highs vs New Lows)
 
 **What it measures:**
-The balance between stocks reaching new 52-week highs versus new 52-week lows. The 13-day EMA (exponential moving average) smooths daily fluctuations.
+The balance between stocks reaching new 52-week highs versus new 52-week lows.
+
+**Key signal: The 13-day EMA only.** Daily readings are background noise — focus entirely on the smoothed 13-day EMA for interpretation and signal strength.
 
 **Key thresholds (13-day EMA):**
 
@@ -165,8 +167,10 @@ The balance between stocks reaching new 52-week highs versus new 52-week lows. T
 - General: Rising = small caps outperforming; Falling = large caps outperforming
 - *Specific thresholds to be defined*
 
-### QQQ:RSP (Concentration Proxy)
-- General: Rising = narrow leadership (tech-heavy); Falling = broader participation
+### QQQ:RSP (Tech-Heavy vs Broad Market)
+- General: Rising = tech-heavy stocks outperforming the average stock; Falling = broader market catching up
+- **Plain language:** Describe as "tech-heavy stocks" vs "the average stock" or "the broader market"
+- **Do NOT use:** "concentrated," "concentration," "narrow leadership" — these are forbidden abstractions
 - *Specific thresholds to be defined*
 
 ### VOO:IEF (Stocks vs Bonds)
