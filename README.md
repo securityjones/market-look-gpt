@@ -1,13 +1,22 @@
 # Market Look GPT
 
-A custom GPT for analyzing stock charts and generating structured market analysis reports for Jeff's Substack.
+A custom GPT for analyzing stock charts and portfolio screenshots to generate structured market analysis and portfolio update reports for Jeff's Substack.
 
 ## Overview
 
-Market Look GPT takes stock chart images as input and produces monthly market analysis reports with:
-- Executive Summary (3 paragraphs: what changed, context, segment snapshot)
+Market Look GPT has two capabilities:
+
+### 1. Market Look Report
+Analyzes stock chart images and produces monthly market analysis reports with:
+- Executive Summary (3 paragraphs: what changed, context, chart-by-chart snapshot)
 - What Should We Do? (portfolio posture guidance, non-prescriptive)
 - Detailed Chart Analysis (per-chart breakdown with signal strength ratings)
+
+### 2. Portfolio Look Report
+Analyzes portfolio screenshots and produces companion articles with:
+- Performance summary (MTD comparison vs 60/40 benchmark, 12-month chart narrative)
+- ETF attribution (which holdings drove gains/losses)
+- Positioning & Market Look connection (alignment/conflicts with market themes)
 
 ## Project Structure
 
@@ -16,19 +25,23 @@ Market Look GPT takes stock chart images as input and produces monthly market an
 │   ├── plan.md                 # Project roadmap
 │   ├── progress.md             # Development log
 │   └── design/                 # Design documents
+│       └── portfolio-look-design.md
 │
 ├── knowledge/                  # GPT knowledge files
 │   └── reference/
-│       ├── tone-and-style-guide.md    # Voice, tone, editorial rules
-│       ├── output-format-guide.md     # Report structure requirements
-│       └── chart-reference-guide.md   # Chart interpretation rules
+│       ├── tone-and-style-guide.md      # Voice, tone, editorial rules (shared)
+│       ├── output-format-guide.md       # Market Look report structure
+│       ├── chart-reference-guide.md     # Market chart interpretation rules
+│       ├── portlook-output-guide.md     # Portfolio Look report structure
+│       └── screenshot-reference-guide.md # Portfolio screenshot interpretation
 │
 ├── samples/
-│   ├── charts/                 # Sample chart images (PNG)
+│   ├── charts/                 # Sample market chart images (PNG)
+│   ├── portcharts/             # Sample portfolio screenshots (PNG)
 │   └── outputs/                # Example/aspirational outputs
 │
 ├── gpt-config/                 # GPT configuration
-│   ├── instructions.md         # System instructions (V7)
+│   ├── instructions.md         # System instructions
 │   └── conversation-starters.md
 │
 ├── .gitignore
@@ -37,45 +50,53 @@ Market Look GPT takes stock chart images as input and produces monthly market an
 
 ## Knowledge Files
 
+### Shared
 | File | Purpose |
 |------|---------|
-| tone-and-style-guide.md | Defines conversational voice, "we" framing, plain language rules, editorial discipline |
-| output-format-guide.md | Specifies exact report structure, section order, paragraph requirements |
+| tone-and-style-guide.md | Conversational voice, "we" framing, plain language rules, editorial discipline |
+
+### Market Look (Task 1)
+| File | Purpose |
+|------|---------|
+| output-format-guide.md | Report structure, section order, paragraph requirements |
 | chart-reference-guide.md | SMA framework for ratio charts, VIX thresholds, NAHL interpretation rules |
 
-## Sample Charts
+### Portfolio Look (Task 2)
+| File | Purpose |
+|------|---------|
+| portlook-output-guide.md | Report structure, Market Look reference style, ETF attribution |
+| screenshot-reference-guide.md | Screenshot layout, ETF lookup requirement, positioning hierarchy |
+
+## Market Charts (Task 1)
 
 - **$VIX** — Volatility Index
 - **$NAHL** — New Highs vs New Lows
-- **IJR_VOO** — Small vs Large Cap
-- **QQQ_RSP** — Concentration Proxy
-- **VOO_IEF** — Stocks vs Bonds
-- **VOO_VEA** — US vs International Developed
-- **VEA_VWO** — Developed vs Emerging International
+- **VOO:IEF** — Stocks vs Bonds
+- **IJR:VOO** — Small vs Large Cap
+- **QQQ:RSP** — Tech-Heavy vs Broad Market
+- **VOO:VEA** — US vs International Developed
+- **VEA:VWO** — Developed vs Emerging International
+
+## Portfolio Screenshots (Task 2)
+
+From allocatesmartly.com or similar:
+- Portfolio screenshot (name, holdings, MTD return, performance chart)
+- Benchmark screenshot (60/40 for comparison)
 
 ## Development Status
 
-✅ **Phase 1: Foundation** — Complete
+✅ **Phase 1-4: Market Look** — Complete & Deployed
 
-✅ **Phase 2: GPT Configuration** — Complete
-- [x] System instructions drafted
-- [x] Conversation starters created
-- [x] V1 deployed to OpenAI
+✅ **Phase 5: Portfolio Look** — Complete (pending deployment)
+- [x] Output format designed
+- [x] Knowledge files created
+- [x] Instructions updated
+- [x] Tested with 3 portfolios (OptimHybrid, LessBold, Permanent Portfolio)
 
-✅ **Phase 3: Testing & Iteration** — Complete
-- [x] V1-V7 tested with sample charts
-- [x] Issues identified and resolved
-- [x] Model requirement discovered
-- [x] Plain-language rules finalized
-
-✅ **Phase 4: Deployment** — Complete
-- [x] Configuration finalized
-- [x] Market Look GPT deployed
-
-🔜 **Phase 5: Portfolio Analysis** — Next
-- [ ] Define requirements
-- [ ] Design output format
-- [ ] Implement Task 2
+🔜 **Phase 6: TAA Recommendation Assessment** — Next
+🔜 **Phase 7: Help/Usage Task**
+🔜 **Phase 8: Expanded Charts** (VOO:IAU, VOO:BCI)
+🔜 **Phase 9: Flexible Chart Inputs**
 
 ## ⚠️ Model Requirement
 
@@ -83,9 +104,4 @@ Market Look GPT takes stock chart images as input and produces monthly market an
 
 **Recommended:** ChatGPT 5.2 Thinking (tested and confirmed working)
 
-Non-thinking models (ChatGPT 5.2 standard) fail at chart interpretation:
-- Miss crossovers and MA relationships
-- Invert signals (report bearish as bullish)
-- Guess rather than read visual data
-
-Thinking models accurately read charts and follow the knowledge file rules.
+Non-thinking models fail at chart interpretation — they guess rather than read visual data. Thinking models accurately read charts and follow knowledge file rules.

@@ -187,7 +187,108 @@ After V6 testing, identified that Exec Summary Para 1/2 and "What Should We Do?"
 - ✅ V7 test output saved
 - ✅ Market Look GPT deployed
 
-**Next Phase: Portfolio Analysis**
-- Task 2 currently returns placeholder: "Future portfolio analysis tbd."
-- Goal: Generate monthly portfolio reports comparing user's portfolio to benchmarks
-- Will require new knowledge files and output format design
+---
+
+## January 25, 2026
+
+### Session 1 — Portfolio Look Design & Implementation
+
+**Context gathered:**
+- User provided sample portfolio screenshots in samples/portcharts/:
+  - benchmark-012426.png (60/40 benchmark)
+  - optimhybrid-012426.png (OptimHybrid portfolio)
+  - lessbold-012426.png (LessBold portfolio)
+- User provided developmental prototype in samples/outputs/port-look-developing.md
+- Prototype includes working starter prompt and aspirational output
+
+**Key design decisions:**
+
+1. **Workflow:** Portfolio Look is a companion piece to Market Look
+   - Market Look → publish as Substack Article #1
+   - Portfolio Look uses published Market Look text as input → publish as Article #2
+   - References to Market Look should read like cross-references between articles
+
+2. **Knowledge file architecture:** Parallel to Market Look
+   - tone-and-style-guide.md — Shared
+   - portlook-output-guide.md — New (output structure)
+   - screenshot-reference-guide.md — New (screenshot interpretation, AUTHORITATIVE)
+
+3. **Output structure:** Opening + 2 paragraphs
+   - Opening framing sentence referencing Market Look
+   - Paragraph 1: Performance summary (MTD comparison, 12-month visual narrative)
+   - Paragraph 2: Positioning & Market Look connection
+
+4. **ETF lookup requirement:** Must look up what ETFs actually hold, not trust screenshot labels
+
+**Files created:**
+
+- ✅ docs/design/portfolio-look-design.md — Design document
+- ✅ knowledge/reference/portlook-output-guide.md — Output format guide (V1)
+- ✅ knowledge/reference/screenshot-reference-guide.md — Screenshot interpretation guide (V1)
+
+**Files updated:**
+
+- ✅ gpt-config/instructions.md — Added Task 2 logic, expanded knowledge file references
+- ✅ docs/plan.md — Updated Phase 5 status and knowledge file table
+
+**Next steps:**
+- [ ] Test with OptimHybrid + benchmark screenshots
+- [ ] Test with LessBold + benchmark screenshots
+- [ ] Iterate based on output quality
+- [ ] Deploy updated GPT to OpenAI
+
+---
+
+### Session 1 (continued) — Testing & Iteration
+
+**Testing completed:**
+
+Tested Portfolio Look with three portfolios:
+1. **OptimHybrid** — Stock-heavy, international-tilted, aligns with Market Look themes
+2. **LessBold** — Balanced, developed-international heavy
+3. **Harry Browne's Permanent Portfolio** — Defensive 25/25/25/25 split, conflicts with Market Look themes
+
+**Issues identified and fixed:**
+
+| Issue | Fix |
+|-------|-----|
+| Task triggers too literal ("Generate my portfolio update" only) | Made triggers flexible — accepts variations like "port look," "how did my portfolio do" |
+| IEFA not treated as part of international allocation | Added explicit note that IEFA/VEA/EFA count toward international |
+| Positioning categories didn't map to Market Look themes | Restructured to: Stocks vs Safety → U.S. vs International → Developed vs EM → Small vs Large |
+| Couldn't tell which holdings drove gains/losses | Added new Paragraph 2 for ETF attribution (look up individual ETF MTD) |
+| ETF lookup vs categorization confusing | Clarified: look up what ETF holds first, then use categorization table |
+| Missing common ETFs in reference | Added: QQQM, VGLT, IAU, PDBC, BCI, SCHH, EWJ, EWS, EWZ |
+| YTD vs MTD inconsistency | Added note to prefer MTD terminology for consistency |
+
+**Output structure finalized:**
+
+1. **Opening** — References Market Look as published article
+2. **Paragraph 1** — Performance summary (MTD comparison, 12-month chart narrative)
+3. **Paragraph 2** — ETF attribution (which holdings drove gains/losses)
+4. **Paragraph 3** — Positioning & Market Look connection (stocks vs safety, U.S. vs intl, alignment/conflicts)
+
+**Key design decisions:**
+
+- Portfolio Look is a **companion piece** to Market Look (readers may have read both)
+- Market Look should be referenced as a published article, not "the analysis above"
+- Benchmark screenshot may be optional — GPT can look up VBINX or calculate SPY/IEF weighted average
+- ETF MTD lookup is required for attribution paragraph
+
+**Files updated during iteration:**
+
+- instructions.md — Flexible triggers, added ETF MTD lookup step, updated validation checklist
+- portlook-output-guide.md — Added Paragraph 2 (ETF attribution), MTD preference
+- screenshot-reference-guide.md — Positioning hierarchy, ETF lookup clarification, expanded ETF examples
+
+**Test output quality:** Good. All three portfolios produced usable outputs with correct:
+- MTD comparison and delta calculation
+- 12-month chart narrative
+- ETF attribution explaining gains/losses
+- Market Look theme alignment/conflict analysis
+
+**Current status:**
+- ✅ Portfolio Look design complete
+- ✅ Knowledge files created and refined
+- ✅ Instructions updated
+- ✅ Testing passed (3 portfolios)
+- ⏳ Ready for deployment to OpenAI
