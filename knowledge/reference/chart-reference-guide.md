@@ -8,11 +8,11 @@ For charts not listed in this guide, the GPT should use its general knowledge of
 
 ## SMA Interpretation Framework (All Ratio Charts)
 
-This framework applies to all ratio charts (e.g., IJR:VOO, VOO:VEA, VEA:VWO, QQQ:RSP, VOO:IEF). Use these rules to interpret moving average relationships and derive posture implications.
+This framework applies to all ratio charts (e.g., VOO:IJR, VOO:VEA, VOO:VWO, VOO:QQQ, VOO:IEF). Use these rules to interpret moving average relationships and derive posture implications.
 
 ### Understanding Ratio Charts
 
-In a ratio chart like A:B (e.g., IJR:VOO):
+In a ratio chart like A:B (e.g., VOO:IJR):
 - **Rising ratio** = A is outperforming B
 - **Falling ratio** = B is outperforming A
 - The SMAs (50-day and 200-day) show the trend of this relative performance
@@ -151,38 +151,66 @@ The balance between stocks reaching new 52-week highs versus new 52-week lows.
 **Month-to-month guidance:**
 - Crossing below zero from above = shift to cautious stance
 - Crossing above zero from below = improving conditions, but confirm with other charts
-- Sustained readings above +50 = healthy broad participation
-- Sustained readings below -50 = widespread deterioration
+- Sustained readings above +50 = strong confirmation to stay invested
+- Sustained readings below -50 = widespread deterioration, consider defensive moves
 
 **How to communicate:**
-- Above 0: "more stocks reaching new highs than new lows"
-- Below 0: "more stocks falling to new lows than reaching new highs"
-- Crossing zero: "the balance has shifted" (describe direction)
+NAHL is a decision signal — communicate what it tells you to DO, not what the indicator shows:
+
+| Situation | What to say |
+|-----------|-------------|
+| Above +50 | "The breadth signal confirms we should be confidently invested in stocks" |
+| Above 0 | "The breadth signal supports staying invested in stocks" |
+| Crossing above 0 | "The breadth signal has moved out of caution territory — it now supports being invested" |
+| Crossing below 0 | "The breadth signal has flipped to caution — it argues for reducing stock exposure" |
+| Below 0 | "The breadth signal is in cautious territory" |
+| Below -50 | "The breadth signal is flashing a 3-alarm warning — consider moving some holdings to cash" |
+
+**Do NOT** just describe what the indicator shows ("more highs than lows"). The reader needs to know what the signal *means for their posture*.
 
 ## Charts Using General Interpretation
 
 *For the following charts, use the SMA Interpretation Framework above plus general technical analysis knowledge. Specific interpretation rules may be added later.*
 
-### IJR:VOO (Small vs Large Cap Ratio)
-- General: Rising = small caps outperforming; Falling = large caps outperforming
+### VOO:IJR (Large vs Small Cap Ratio)
+- General: Rising = large caps outperforming small caps; Falling = small caps outperforming large caps
+- **Plain language:** Describe as "large companies" vs "smaller companies"
 - *Specific thresholds to be defined*
 
-### QQQ:RSP (Tech-Heavy vs Broad Market)
-- General: Rising = tech-heavy stocks outperforming the average stock; Falling = broader market catching up
-- **Plain language:** Describe as "tech-heavy stocks" vs "the average stock" or "the broader market"
+### VOO:QQQ (Broad Market vs Tech-Heavy)
+- General: Rising = broad market outperforming tech-heavy stocks; Falling = tech-heavy stocks outperforming broad market
+- **Plain language:** Describe as "the broad market" vs "tech-heavy stocks"
 - **Do NOT use:** "concentrated," "concentration," "narrow leadership" — these are forbidden abstractions
 - *Specific thresholds to be defined*
 
 ### VOO:IEF (Stocks vs Bonds)
-- General: Rising = stocks outperforming safer assets; Falling = flight to safety
+- General: Rising = stocks outperforming bonds; Falling = bonds outperforming (flight to safety)
+- Part of the "Stocks vs Safety" group — compare with VOO:IAU and VOO:BCI
+- *Specific thresholds to be defined*
+
+### VOO:IAU (Stocks vs Gold)
+- General: Rising = stocks outperforming gold; Falling = gold outperforming (defensive/inflation hedge gaining)
+- Part of the "Stocks vs Safety" group — compare with VOO:IEF and VOO:BCI
+- **Plain language:** Describe as "stocks vs gold" or "gold as a safe haven"
+- Gold often rises during uncertainty, inflation concerns, or loss of confidence in financial assets
+- *Specific thresholds to be defined*
+
+### VOO:BCI (Stocks vs Commodities)
+- General: Rising = stocks outperforming commodities; Falling = commodities outperforming
+- Part of the "Stocks vs Safety" group — compare with VOO:IEF and VOO:IAU
+- **Plain language:** Describe as "stocks vs commodities" or "real assets"
+- Commodities often rise during inflationary periods or supply-driven stress
 - *Specific thresholds to be defined*
 
 ### VOO:VEA (US vs International Developed)
-- General: Rising = US outperforming; Falling = international outperforming
+- General: Rising = US outperforming developed international; Falling = developed international outperforming US
+- Part of the "US vs International" group — compare with VOO:VWO
 - *Specific thresholds to be defined*
 
-### VEA:VWO (Developed vs Emerging International)
-- General: Rising = developed international outperforming; Falling = emerging markets outperforming
+### VOO:VWO (US vs Emerging Markets)
+- General: Rising = US outperforming emerging markets; Falling = emerging markets outperforming US
+- Part of the "US vs International" group — compare with VOO:VEA
+- Together, VOO:VEA and VOO:VWO answer the question "US or international?" — if both favor international, that's a clear signal; if mixed, explain which part of international is leading
 - *Specific thresholds to be defined*
 
 ## Adding New Interpretations

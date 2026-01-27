@@ -292,3 +292,74 @@ Tested Portfolio Look with three portfolios:
 - ✅ Instructions updated
 - ✅ Testing passed (3 portfolios)
 - ⏳ Ready for deployment to OpenAI
+
+---
+
+## January 26, 2026
+
+### Session 1 — Phase 8: Expanded Market Look Charts ✅
+
+**Objective:** Add VOO:IAU (stocks vs gold) and VOO:BCI (stocks vs commodities) to Market Look capability.
+
+**Chart hierarchy redesign:**
+
+Reorganized chart ordering into a logical 3-tier hierarchy:
+
+| Tier | Purpose | Charts |
+|------|---------|--------|
+| Tier 1 — Macro Conditions | Overall market stress/health | VIX, NAHL |
+| Tier 2 — Big Allocation Questions | Stocks vs safety, US vs intl | VOO:IEF, VOO:IAU, VOO:BCI (group), VOO:VEA, VOO:VWO (group) |
+| Tier 3 — Drilling Down | Within-category comparisons | VOO:IJR, VOO:QQQ (within US) |
+
+**Chart changes:**
+- Added VOO:IAU (stocks vs gold)
+- Added VOO:BCI (stocks vs commodities)
+- Swapped VEA:VWO → VOO:VWO (direct US vs EM comparison, cleaner story)
+- Swapped IJR:VOO → VOO:IJR (consistent VOO: prefix, inverted interpretation)
+- Swapped QQQ:RSP → VOO:QQQ (consistent VOO: prefix, inverted interpretation)
+
+**Final chart lineup (9 charts):**
+1. $VIX — Volatility Index
+2. $NAHL — New Highs vs New Lows
+3. VOO:IEF — Stocks vs Bonds
+4. VOO:IAU — Stocks vs Gold
+5. VOO:BCI — Stocks vs Commodities
+6. VOO:VEA — US vs International Developed
+7. VOO:VWO — US vs Emerging Markets
+8. VOO:IJR — Large vs Small Cap
+9. VOO:QQQ — Broad Market vs Tech-Heavy
+
+**Paragraph 3 improvements (multiple iterations):**
+- Issue: GPT was writing checklist-style with parenthetical translations
+- Fix: Added explicit "observation vs interpretation" guidance
+- Fix: Added full aspirational example showing narrative style
+- Fix: Changed "technical language allowed" to "permitted but not required"
+- Fix: Added "DO NOT write like this" example showing the bad pattern
+- Result: GPT now writes flowing narrative interpretation, not data dumps
+
+**NAHL communication fix:**
+- Issue: GPT was describing indicator ("more highs than lows")
+- Fix: NAHL is a decision signal — communicate what it tells you to DO
+- New guidance: "above +50 = confirms we should be confidently invested in stocks"
+
+**Optional "lesson of the month" closer:**
+- Added option to end Paragraph 3 with investing principle the data illustrates
+- Backward-looking reflection, not forward action guidance
+- Only when earned from the data
+
+**Chart permalinks added:**
+- Each chart in Detailed Chart Analysis now starts with `[Link to chart](permalink)`
+- All 9 StockCharts permalinks documented in output-format-guide.md
+
+**Files updated:**
+- output-format-guide.md → V8 (major revisions)
+- chart-reference-guide.md → V8 (new charts, updated examples)
+
+**Test output saved:**
+- samples/outputs/market-look-v8-test.md
+
+**Legacy cleanup:**
+- Removed all references to old chart names (IJR:VOO, QQQ:RSP, VEA:VWO)
+- Updated examples throughout both knowledge files
+
+**Status:** Phase 8 complete. Ready for deployment when ChatGPT upload limits reset.

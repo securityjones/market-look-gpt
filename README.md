@@ -69,13 +69,20 @@ Analyzes portfolio screenshots and produces companion articles with:
 
 ## Market Charts (Task 1)
 
+**Tier 1 — Macro Conditions:**
 - **$VIX** — Volatility Index
 - **$NAHL** — New Highs vs New Lows
+
+**Tier 2 — Big Allocation Questions:**
 - **VOO:IEF** — Stocks vs Bonds
-- **IJR:VOO** — Small vs Large Cap
-- **QQQ:RSP** — Tech-Heavy vs Broad Market
+- **VOO:IAU** — Stocks vs Gold
+- **VOO:BCI** — Stocks vs Commodities
 - **VOO:VEA** — US vs International Developed
-- **VEA:VWO** — Developed vs Emerging International
+- **VOO:VWO** — US vs Emerging Markets
+
+**Tier 3 — Drilling Down:**
+- **VOO:IJR** — Large vs Small Cap (within US)
+- **VOO:QQQ** — Broad Market vs Tech-Heavy (within US)
 
 ## Portfolio Screenshots (Task 2)
 
@@ -93,9 +100,15 @@ From allocatesmartly.com or similar:
 - [x] Instructions updated
 - [x] Tested with 3 portfolios (OptimHybrid, LessBold, Permanent Portfolio)
 
-🔜 **Phase 6: TAA Recommendation Assessment** — Next
+✅ **Phase 8: Expanded Charts** — Complete
+- [x] Added VOO:IAU (stocks vs gold), VOO:BCI (stocks vs commodities)
+- [x] Reorganized chart hierarchy into 3 tiers
+- [x] Swapped to VOO:VWO (was VEA:VWO), VOO:IJR (was IJR:VOO), VOO:QQQ (was QQQ:RSP)
+- [x] Added chart permalinks to Detailed Chart Analysis
+- [x] Tested with 9-chart set (V8)
+
+🔜 **Phase 6: TAA Recommendation Assessment**
 🔜 **Phase 7: Help/Usage Task**
-🔜 **Phase 8: Expanded Charts** (VOO:IAU, VOO:BCI)
 🔜 **Phase 9: Flexible Chart Inputs**
 
 ## ⚠️ Model Requirement

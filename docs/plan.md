@@ -64,12 +64,15 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
   - What inputs are required for each task
 - [ ] Add to instructions.md (minimal thinking needed — mostly static output)
 
-### Phase 8: Expanded Market Look Charts 🔜
-- [ ] Add VOO:IAU ratio chart (stocks vs gold)
-- [ ] Add VOO:BCI ratio chart (stocks vs commodities)
-- [ ] Update chart-reference-guide.md with interpretation rules for new charts
-- [ ] Update output-format-guide.md chart ordering
-- [ ] Test with expanded chart set
+### Phase 8: Expanded Market Look Charts ✅
+- [x] Add VOO:IAU ratio chart (stocks vs gold)
+- [x] Add VOO:BCI ratio chart (stocks vs commodities)
+- [x] Update chart-reference-guide.md with interpretation rules for new charts
+- [x] Update output-format-guide.md chart ordering (reorganized into 3 tiers)
+- [x] Swap VEA:VWO → VOO:VWO (direct US vs EM comparison)
+- [x] Swap IJR:VOO → VOO:IJR and QQQ:RSP → VOO:QQQ (consistent VOO: prefix)
+- [x] Add chart permalinks to Detailed Chart Analysis output
+- [x] Test with expanded 9-chart set (V8 complete)
 
 ### Phase 9: Flexible Chart Inputs 🔜
 - [ ] Allow Market Look to work with subset of charts (not all 7 required)
@@ -102,8 +105,8 @@ Non-thinking models (ChatGPT 5.2 standard) fail at chart interpretation — they
 | File | Purpose | Status |
 |------|---------|--------|
 | tone-and-style-guide.md | Voice, editorial rules, forbidden words | ✅ V7 (shared) |
-| output-format-guide.md | Market Look report structure, plain-language rules | ✅ V7 |
-| chart-reference-guide.md | Market chart interpretation rules (AUTHORITATIVE) | ✅ V2 |
+| output-format-guide.md | Market Look report structure, plain-language rules | ✅ V8 |
+| chart-reference-guide.md | Market chart interpretation rules (AUTHORITATIVE) | ✅ V8 |
 | portlook-output-guide.md | Portfolio Look report structure | ✅ V1 |
 | screenshot-reference-guide.md | Portfolio screenshot interpretation (AUTHORITATIVE) | ✅ V1 |
 

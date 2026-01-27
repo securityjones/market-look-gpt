@@ -77,33 +77,78 @@ This paragraph provides orientation, not outlook.
 
 ### Paragraph 3 – Chart-by-Chart Snapshot
 
-This paragraph walks through **each chart area in order**, giving a brief specific observation about each. It's the detailed "since last month" breakdown.
+This paragraph walks through **each chart area in order**, telling the story of what changed and what it means. It's the detailed "since last month" breakdown — written in **plain, interpretive language**.
 
-**Technical language IS allowed in Paragraph 3.** Unlike Paragraphs 1 and 2, this paragraph may use:
-- Ticker symbols and chart names (VIX, NAHL, VOO:IEF, etc.)
-- Moving average language ("above both averages," "short average nudging over the long one")
-- Technical framing ("crossover," "threshold crossing")
+**Lead with meaning, not mechanics.** Paragraph 3 should read like accessible market commentary, not a technical data dump. You don't need to name ticker symbols or describe moving average positions — just tell the reader what each area is signaling.
 
-This is the one place in the Executive Summary where specific chart details belong.
+**The goal:** A reader should understand what each chart means for them without needing to know what "above both averages" or "golden cross" means.
+
+**Example of the correct style:**
+
+> "Volatility stayed quiet. The breadth signal continues to support staying invested in stocks. Stocks are doing better than bonds, but gold and commodities are both showing relative strength against stocks — a mixed picture on the 'stocks vs safety' question. Within stocks, small caps have started to catch up after a long stretch of lagging behind large caps. Tech-heavy stocks are no longer pulling ahead of the broader market. And international remains the story: both developed and emerging markets continue to outperform U.S. stocks."
+
+Notice: No ticker symbols. No "above both averages." Just clear statements about what each area is telling us.
+
+**DO NOT write like this:**
+
+> "$VIX stayed in the mid-teens and below its key averages, keeping the 'quiet tape' intact. $NAHL's 13-day EMA remains above +50, which is the kind of breadth reading that typically supports staying invested. VOO:IEF remains above both averages (stocks still ahead of bonds). VOO:IJR has dropped below both averages with the shorter average now below the longer one — an early 'small caps catching up' tell."
+
+This leads with technical observations and buries the interpretation in parentheticals. Flip it: lead with interpretation, skip the technical scaffolding.
 
 **Required ordering (follow this sequence):**
 
-1. **Volatility (VIX)** — calm or turbulent conditions
-2. **Stocks vs safety (VOO:IEF)** — risk appetite
-3. **Breadth (NAHL)** — new highs vs new lows balance
-4. **Small vs large caps (IJR:VOO)** — size leadership
-5. **Concentration (QQQ:RSP)** — tech-heavy stocks vs broad market
-6. **US vs international (VOO:VEA)** — geographic leadership
-7. **Developed vs emerging (VEA:VWO)** — international breakdown
+**Tier 1 — Macro Conditions:**
+1. **Volatility** — calm or turbulent conditions
+2. **Breadth** — what the new highs vs new lows signal says
+
+**Tier 2 — Big Allocation Questions:**
+3. **Stocks vs safety** — stocks vs bonds, gold, and commodities
+4. **US vs international** — developed and emerging markets vs US
+
+**Tier 3 — Drilling Down:**
+5. **Large vs small caps** — size leadership within US (VOO:IJR)
+6. **Broad market vs tech** — broad market vs tech-heavy stocks within US (VOO:QQQ)
+
+**Notes on US vs International group:**
+The two charts (VOO:VEA, VOO:VWO) together answer "US or international?" If both favor international, that's a clear tilt. If mixed (e.g., US trails developed but leads emerging), explain the nuance.
+
+**Notes on Stocks vs Safety group:**
+The three "stocks vs safety" charts (VOO:IEF, VOO:IAU, VOO:BCI) can be discussed as a synthesized group when they tell a coherent story (e.g., "Stocks remain preferred over all three safety alternatives") or individually when they diverge (e.g., "Stocks still lead bonds, but gold is starting to compete").
 
 **For each chart area:**
 - State what the chart is currently showing
 - Note what has changed recently (or say it's unchanged)
+- **Interpret what it means** — don't just observe, explain the implication
 - Be specific — mention threshold crossings, crossovers, or trend shifts when they occur
+
+**Observation vs Interpretation — CRITICAL:**
+
+Paragraph 3 must go beyond mechanical observation. Each chart mention should tell the reader what changed AND what it means.
+
+| ❌ Observation only (don't write this) | ✅ Interpretation (write this) |
+|----------------------------------------|-------------------------------|
+| "$VIX remains in the calm zone and is sitting below its longer moving averages" | "Volatility has continued to settle, reinforcing the calmer price behavior that began late last year" |
+| "VOO:IEF stays above both key averages (stocks still ahead of bonds)" | "Stocks relative to safer assets have held their ground rather than weakening further" |
+| "VOO:IJR dropped below both averages with the shorter average now below the longer" | "Smaller U.S. companies have stopped falling further behind large ones and have shown early signs of catching up" |
+| "$NAHL (13-day EMA) is still above +50, though it's off its prior peak" | "The balance between stocks reaching new highs and new lows has moved decisively out of a caution zone and into a range that, in past periods, has aligned with healthier conditions" |
+
+**Key difference:** The observation column reads like a checklist of what the chart shows. The interpretation column tells a *story* — what changed, what it means, and how it connects to the broader picture.
 
 If a chart has not changed meaningfully, still mention it briefly (e.g., "Small caps continue to lag, with no meaningful change this month").
 
-End this paragraph by summarizing what the charts collectively suggest about current conditions.
+End this paragraph by summarizing what the charts collectively suggest about current conditions — not just a list of signals, but a synthesis of what the picture looks like taken together (e.g., "Taken together, the charts describe a market that has moved out of a stressed state and into a quieter, more balanced one — but not yet into a broadly strong or fully reinforced phase").
+
+**Optional: "Lesson of the month" closer**
+
+When the data suggests a clear investing lesson, you may end Paragraph 3 with a sentence that reflects on what principle this month's picture illustrates. This is backward-looking ("this month showed..."), not forward-looking action guidance (that belongs in "What Should We Do?").
+
+Only include this when the lesson feels earned from the data — don't force generic advice.
+
+**Example framings:**
+- "This is a market that rewarded diversification over concentration."
+- "Months like this remind us why geographic diversification matters."
+- "This month showed the value of spreading bets beyond U.S. large-cap tech."
+- "The data reinforces that 'just own the biggest names' has gotten more complicated."
 
 **Synthesis Rule:**
 Charts must not be treated as independent signals. Their meaning comes from how they agree, conflict, or create tension with one another. When signals are mixed, explain the mix.
@@ -115,7 +160,7 @@ This section translates the specific chart signals from the Executive Summary in
 This section should be **one paragraph** that translates chart signals into portfolio posture guidance.
 
 **Plain-language rules for "What Should We Do?" (MANDATORY):**
-- **No ticker symbols** (not VOO:IEF, not $NAHL, not IJR:VOO — none)
+- **No ticker symbols** (not VOO:IEF, not $NAHL, not VOO:IJR — none)
 - **No moving average jargon** (not "short-over-long average setup," not "below both averages")
 - Translate chart observations into plain posture statements
 - This section must pass the "Jeff's Mother" test — she doesn't know what VOO:IEF means
@@ -123,8 +168,8 @@ This section should be **one paragraph** that translates chart signals into port
 **How to translate:**
 - Instead of "VOO:IEF still tilted toward stocks" → "stocks are still doing better than bonds"
 - Instead of "$NAHL above +50" → "the new-highs vs new-lows picture supports staying invested"
-- Instead of "IJR:VOO turning up into a short-over-long setup" → "smaller companies have started doing better than large ones"
-- Instead of "QQQ:RSP slipping under its short average" → "tech-heavy stocks have cooled off"
+- Instead of "VOO:IJR falling into a short-under-long setup" → "smaller companies have started doing better than large ones"
+- Instead of "VOO:QQQ rising above its short average" → "tech-heavy stocks have cooled off"
 - Instead of "VOO:VEA below both averages" → "international stocks continue to outpace U.S. stocks"
 
 **Structure (follow this order within the paragraph):**
@@ -138,7 +183,7 @@ This section should be **one paragraph** that translates chart signals into port
 
 **When a ratio shows a regime change (crossover against the prior trend):**
 - This argues for considering a shift in balance between those two areas
-- Example: If IJR:VOO shows a bullish crossover after a long period of small cap underperformance → consider increasing small cap exposure relative to large caps
+- Example: If VOO:IJR shows a bearish crossover after a long period of large cap dominance → consider increasing small cap exposure relative to large caps
 - Example: If VOO:VEA shows international now outperforming after US led → consider shifting balance toward international stocks
 - Do NOT just say "watch" or "stay open to" — a confirmed crossover is a signal to consider acting
 
@@ -153,19 +198,23 @@ This section should be **one paragraph** that translates chart signals into port
 - NAHL crossing below 0 → caution, consider reducing equity exposure
 - NAHL below -50 → significant stress, consider moving toward cash
 
-**Stocks vs Bonds (VOO:IEF) — risk-on vs risk-off:**
-- VOO:IEF bullish (above MAs, stocks leading) → supports favoring equities over bonds
-- VOO:IEF bearish crossover (stocks weakening vs bonds) → consider shifting some balance from equities toward bonds/safety
-- This ratio tells you about overall risk appetite, not which equities to own
+**Stocks vs Safety (VOO:IEF, VOO:IAU, VOO:BCI):**
+- All three bullish (stocks leading bonds, gold, and commodities) → strong support for staying in equities
+- All three bearish → consider shifting toward safety assets
+- Mixed signals → identify which safety asset is gaining (bonds = flight to safety, gold = uncertainty/inflation hedge, commodities = inflation/supply concerns)
+- VOO:IEF bearish crossover → consider shifting some balance from stocks toward bonds
+- VOO:IAU bearish crossover → gold gaining as defensive asset, consider adding gold exposure
+- VOO:BCI bearish crossover → commodities outperforming, consider real asset exposure
+- When the three diverge, the specific safety asset gaining tells you something about the *type* of concern (bonds = rate/recession, gold = uncertainty, commodities = inflation)
 
 **Within equities (segment comparisons):**
-- IJR:VOO bullish crossover → consider increasing small cap allocation relative to large caps
-- IJR:VOO bearish → large caps still leading, no argument to shift toward small caps
-- QQQ:RSP pulling back → tech-heavy stocks losing edge, consider broadening toward the average stock
-- QQQ:RSP still rising → tech-heavy stocks still leading, no argument to shift away
-- VOO:VEA favoring international (bearish for US) → consider shifting balance toward international
-- VOO:VEA favoring US → US still leading, no argument to shift toward international
-- VEA:VWO favoring one side → consider emphasizing that area within international allocation
+- VOO:IJR falling (small caps gaining) → consider increasing small cap allocation relative to large caps
+- VOO:IJR rising (large caps leading) → large caps still leading, no argument to shift toward small caps
+- VOO:QQQ rising (broad market gaining vs tech) → tech-heavy stocks losing edge, consider broadening toward the average stock
+- VOO:QQQ falling (tech leading) → tech-heavy stocks still leading, no argument to shift away
+- VOO:VEA falling (international gaining) → consider shifting balance toward international
+- VOO:VEA rising (US leading) → US still leading, no argument to shift toward international
+- VOO:VWO favoring one side → consider the developed vs emerging balance within international
 - Chart unchanged or neutral → it doesn't argue for adjustment (don't mention it)
 
 **Example of good output:**
@@ -209,18 +258,37 @@ This section provides the supporting evidence behind the Executive Summary.
 **Required chart ordering (same as Paragraph 3):**
 
 1. **$VIX** — Volatility Index
-2. **VOO:IEF** — Stocks vs. Bonds
-3. **$NAHL** — New Highs vs. New Lows
-4. **IJR:VOO** — Small-Cap vs. Large-Cap
-5. **QQQ:RSP** — Tech-Heavy vs. Broad Market
+2. **$NAHL** — New Highs vs. New Lows
+3. **VOO:IEF** — Stocks vs. Bonds
+4. **VOO:IAU** — Stocks vs. Gold
+5. **VOO:BCI** — Stocks vs. Commodities
 6. **VOO:VEA** — U.S. vs. International Developed
-7. **VEA:VWO** — Developed vs. Emerging International
+7. **VOO:VWO** — U.S. vs. Emerging Markets
+8. **VOO:IJR** — Large-Cap vs. Small-Cap
+9. **VOO:QQQ** — Broad Market vs. Tech-Heavy
 
 If a chart is provided that's not on this list, place it in a logical position within this ordering.
 
+**Chart permalinks (include as first line of each chart subsection):**
+
+| Chart | Permalink |
+|-------|-----------|
+| $VIX | https://schrts.co/xWJYFssp |
+| $NAHL | https://schrts.co/UuzcuKia |
+| VOO:IEF | https://schrts.co/sXnqcYfh |
+| VOO:IAU | https://schrts.co/GyzdpGBx |
+| VOO:BCI | https://schrts.co/vDyhfzfd |
+| VOO:VEA | https://schrts.co/GtcdSWHh |
+| VOO:VWO | https://schrts.co/zKEdhDAw |
+| VOO:IJR | https://schrts.co/IDHJXsmz |
+| VOO:QQQ | https://schrts.co/DhzZUgpW |
+
+Format: `[Link to chart](permalink)`
+
 **Each chart subsection must follow this structure:**
 
-1. **Observation paragraphs** — Start by stating the observable facts:
+1. **Link** — First line: `[Link to chart](permalink)` using the permalink from the table above
+2. **Observation paragraphs** — State the observable facts:
    - For ratio charts: State whether price is above/below the MAs, whether shorter MA is above/below longer MA, and any recent crossings. **Do NOT state the ratio value itself (e.g., "9.65") — it is meaningless. Only the relationship to the MAs matters.**
    - Example: "Price is above both the 10-week and 40-week MAs. The shorter MA crossed above the longer MA two weeks ago — a bullish signal."
    - For VIX: current level and which range it falls in (12-20, 20-30, etc.)
