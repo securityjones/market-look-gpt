@@ -107,9 +107,14 @@ From allocatesmartly.com or similar:
 - [x] Added chart permalinks to Detailed Chart Analysis
 - [x] Tested with 9-chart set (V8)
 
+✅ **Phase 9: Flexible Chart Inputs** — Complete
+- [x] 3 minimum required charts (NAHL, VOO:IEF, VOO:VEA), 6 optional
+- [x] Ratio Chart Fundamentals section with interpretation rules
+- [x] NAHL guidance overhaul (not a ratio chart, recency rules, threshold focus)
+- [x] Tested with 4-chart and 9-chart sets (V10)
+
 🔜 **Phase 6: TAA Recommendation Assessment**
 🔜 **Phase 7: Help/Usage Task**
-🔜 **Phase 9: Flexible Chart Inputs**
 
 ## ⚠️ Model Requirement
 

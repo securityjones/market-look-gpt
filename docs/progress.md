@@ -363,3 +363,52 @@ Reorganized chart ordering into a logical 3-tier hierarchy:
 - Updated examples throughout both knowledge files
 
 **Status:** Phase 8 complete. Ready for deployment when ChatGPT upload limits reset.
+
+---
+
+## January 27-28, 2026
+
+### Session — Phase 9: Flexible Chart Inputs & Ratio/NAHL Guidance Overhaul
+
+**Flexible chart requirements implemented:**
+- 3 minimum required charts: NAHL, VOO:IEF, VOO:VEA
+- 6 optional charts: VIX, VOO:IAU, VOO:BCI, VOO:VWO, VOO:IJR, VOO:QQQ
+- GPT stops and requests missing required charts; generates complete report with partial optional set
+- Input formats: individual images (PNG/JPG) or multi-page PDF (ZIP not supported)
+
+**Ratio Chart Fundamentals section added to chart-reference-guide.md:**
+- Clear terminology: numerator, denominator, "ratio" not "price"
+- 5-step observation checklist with MA crossover timing guidance (4-5 bars = this month, 12-13 bars = established)
+- "Do Not Invert" rule with explicit table showing winner when ratio falls
+- Common error example (VOO:IJR inversion)
+
+**NAHL guidance overhauled:**
+- Explicit: "This is a breadth indicator, NOT a ratio chart"
+- Two elements, one signal: 13-day EMA only; ignore dotted daily line unless emergency (-500)
+- Recency rules: don't call old readings "recent"; threshold crossings reset narrative anchor
+- Do NOT say: "eased from recent highs," "cooled from higher readings" (unless actually recent)
+- CAN reference older readings with accurate time labels: "hasn't reached the high signals from late last year"
+
+**Output format updates:**
+- Chart link now comes after header, not before
+- "Ratio" terminology throughout
+- Reference to chart-reference-guide for interpretation rules
+
+**Testing:**
+- V9: 4-chart and 9-chart tests (identified NAHL and ratio inversion issues)
+- V10: 4-chart and 9-chart tests (NAHL and ratio interpretation correct)
+
+**Test outputs saved:**
+- samples/outputs/market-look-v9-4chart-test.md
+- samples/outputs/market-look-v9-allcharts-test.md
+- samples/outputs/market-look-v10-4chart-test.md
+- samples/outputs/market-look-v10-allcharts-test.md
+
+**Files updated:**
+- instructions.md → flexible chart requirements, input format changes
+- chart-reference-guide.md → Ratio Chart Fundamentals, NAHL overhaul, terminology fixes
+- output-format-guide.md → chart link position, ratio terminology
+- plan.md → Phase 9 complete
+- README.md → Phase 9 complete
+
+**Status:** Phase 9 complete. V10 is stable and ready for production use.

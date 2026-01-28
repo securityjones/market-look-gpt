@@ -6,16 +6,68 @@ This document provides specific interpretation rules for charts used in Market L
 
 For charts not listed in this guide, the GPT should use its general knowledge of technical analysis while adhering to the tone and output format requirements.
 
+---
+
+## Ratio Chart Fundamentals
+
+**This section applies to all ratio charts:** VOO:IEF, VOO:IAU, VOO:BCI, VOO:VEA, VOO:VWO, VOO:IJR, VOO:QQQ. Master this before interpreting any ratio chart.
+
+### What a Ratio Chart Shows
+
+A ratio chart like A:B (e.g., VOO:IJR) displays A divided by B. It shows **relative performance** between two assets — not the absolute price of either one.
+
+- **Rising ratio** → the numerator (first symbol) is outperforming the denominator (second symbol)
+- **Falling ratio** → the denominator (second symbol) is outperforming the numerator (first symbol)
+- **Flat ratio** → roughly equal performance between the two
+
+### Terminology
+
+| Term | Meaning |
+|------|---------|
+| **Numerator** | The first symbol (before the colon). In VOO:IJR, VOO is the numerator. |
+| **Denominator** | The second symbol (after the colon). In VOO:IJR, IJR is the denominator. |
+| **Ratio** | The value shown on the chart. Say "ratio" not "price" when describing ratio charts. |
+
+### What to Observe (in this order)
+
+1. **Recent bars vs one month ago** — Where is the ratio now compared to 4-5 bars left? Rising, falling, or flat?
+2. **Ratio position vs MAs** — Is the ratio above or below the 10-week (short) and 40-week (long) moving averages?
+3. **MA relationship** — Is the short MA above or below the long MA?
+4. **MA crossovers** — Did a golden cross (short crosses above long) or death cross (short crosses below long) occur? If so, when?
+   - **Within the last 4-5 bars** = this month; a fresh signal that may need confirmation
+   - **Within the last 12-13 bars** = past few months; an established signal — check whether the most recent 4-5 bars are confirming (continuing in the crossover's direction) or reverting (moving back toward the prior trend)
+   - **Older than ~13 bars** = well-established; describe as the prevailing trend rather than a recent event
+5. **MA slope** — Are both MAs rising, falling, flattening, or mixed?
+
+### Interpretation Rule — Do Not Invert
+
+**⚠️ CRITICAL:** Your conclusion MUST match the ratio's direction. When the ratio is falling or below the MAs, the **DENOMINATOR is winning**, not the numerator.
+
+| Chart | When ratio is FALLING or below MAs | Winner |
+|-------|-----------------------------------|--------|
+| VOO:IJR | Small caps beating large caps | IJR (small caps) |
+| VOO:VEA | International beating US | VEA (international) |
+| VOO:VWO | Emerging markets beating US | VWO (emerging) |
+| VOO:IEF | Bonds beating stocks | IEF (bonds) |
+| VOO:IAU | Gold beating stocks | IAU (gold) |
+| VOO:BCI | Commodities beating stocks | BCI (commodities) |
+| VOO:QQQ | Tech beating broad market | QQQ (tech) |
+
+**Before writing any interpretation, ask yourself:** "Which side is winning based on what I observed?" Then verify your conclusion matches.
+
+### Common Error to Avoid
+
+❌ **Wrong:** "The ratio is below both MAs and falling. Large caps are still outperforming small caps."
+
+✅ **Correct:** "The ratio is below both MAs and falling. Small caps are outperforming large caps."
+
+The first example inverts the interpretation — it describes small caps winning but concludes large caps are ahead. This is the most common error. Always check that your conclusion matches your observation.
+
+---
+
 ## SMA Interpretation Framework (All Ratio Charts)
 
-This framework applies to all ratio charts (e.g., VOO:IJR, VOO:VEA, VOO:VWO, VOO:QQQ, VOO:IEF). Use these rules to interpret moving average relationships and derive posture implications.
-
-### Understanding Ratio Charts
-
-In a ratio chart like A:B (e.g., VOO:IJR):
-- **Rising ratio** = A is outperforming B
-- **Falling ratio** = B is outperforming A
-- The SMAs (50-day and 200-day) show the trend of this relative performance
+This framework builds on the Ratio Chart Fundamentals above. Use these rules to interpret moving average relationships and derive posture implications.
 
 ### SMA Crossover Signals
 
@@ -26,15 +78,15 @@ In a ratio chart like A:B (e.g., VOO:IJR):
 
 These are lagging indicators that confirm *after* a move starts, but they often mark **regime changes** — sustained shifts in leadership that can last months.
 
-### Price Position Relative to SMAs
+### Ratio Position Relative to SMAs
 
 | Position | Interpretation |
 |----------|----------------|
-| Price above both 50 & 200 SMA | Strong uptrend — clear momentum favoring the numerator |
-| Price below both 50 & 200 SMA | Strong downtrend — sustained weakness in the numerator |
-| Price between 50 & 200 SMA | Transitional — trend uncertain or potentially changing |
-| Price bounces off SMA from above | SMA acting as support — trend intact |
-| Price rejected at SMA from below | SMA acting as resistance — prior trend still dominant |
+| Ratio above both short & long MA | Strong uptrend — clear momentum favoring the numerator |
+| Ratio below both short & long MA | Strong downtrend — denominator is outperforming |
+| Ratio between short & long MA | Transitional — trend uncertain or potentially changing |
+| Ratio bounces off MA from above | MA acting as support — trend intact |
+| Ratio rejected at MA from below | MA acting as resistance — prior trend still dominant |
 
 ### Slope Analysis
 
@@ -54,19 +106,19 @@ For monthly reports, distinguish between fresh signals and established condition
 |-----------|----------------|---------------------|
 | Golden cross *this month* after downtrend | Fresh regime change signal | Consider shifting emphasis toward the numerator |
 | Golden cross occurred months ago, still holding | Established trend, continuation | Continued emphasis on numerator remains supported |
-| Golden cross this month but price falls back below SMAs | Failed signal / false start | Wait for confirmation before adjusting |
+| Golden cross this month but ratio falls back below MAs | Failed signal / false start | Wait for confirmation before adjusting |
 | Death cross *this month* after uptrend | Fresh reversal signal | Consider reducing emphasis on the numerator |
 | Death cross occurred months ago, still holding | Established weakness | Reduced emphasis on numerator remains appropriate |
 
 ### Confirmation Criteria
 
 A crossover signal is more reliable when:
-- Price stays on the expected side of both SMAs after the cross
+- Ratio stays on the expected side of both MAs after the cross
 - Volume (if visible) supports the move
 - The signal aligns with other charts in the analysis
 
 A crossover signal is suspect when:
-- Price immediately reverses back through the SMAs
+- Ratio immediately reverses back through the MAs
 - The cross happens in a choppy, sideways range
 - Other charts show conflicting signals
 
@@ -134,10 +186,26 @@ The market's expectation of near-term volatility, often called the "fear gauge."
 
 ### NAHL (New Highs vs New Lows)
 
-**What it measures:**
-The balance between stocks reaching new 52-week highs versus new 52-week lows.
+**This is a breadth indicator, NOT a ratio chart.** Do not apply ratio chart rules (no numerator/denominator, no "bars vs MAs" analysis, no crossover signals).
 
-**Key signal: The 13-day EMA only.** Daily readings are background noise — focus entirely on the smoothed 13-day EMA for interpretation and signal strength.
+**What it measures:**
+The balance between stocks reaching new 52-week highs versus new 52-week lows. It is the count of daily high minus the count of lows.
+
+**Chart elements — two lines, one signal:**
+- **13-day EMA (solid line)** — THE signal. Always focus on this. It's smoothed by design.
+- **Daily readings (dotted line)** — Ignore completely unless the emergency threshold triggers (see below).
+
+**What to observe:**
+1. Current EMA value
+2. Which threshold zone it's in (+50, 0, -50)
+3. EMA direction: rising, falling, or flat over recent weeks
+4. Recent threshold crossings: did it cross 0, +50, or -50 within the last 1-2 months?
+
+**Do NOT observe or describe:**
+- The dotted daily line (unless emergency)
+- "Choppiness" or "swings" — that describes daily noise, not the smoothed EMA
+- "Bars vs moving averages" — that's for ratio charts, not NAHL
+- Comparisons to prior peaks that aren't recent (see recency rules below)
 
 **Key thresholds (13-day EMA):**
 
@@ -147,6 +215,32 @@ The balance between stocks reaching new 52-week highs versus new 52-week lows.
 | Above 0 | Risk-on for equities | Normal equity exposure appropriate |
 | Below 0 | Risk-off signal | Cautious; consider reducing exposure |
 | Below -50 | Significant stress | Consider moving toward cash |
+
+**Recency and comparisons to prior readings — when it's relevant:**
+
+Threshold crossings reset the narrative anchor. Apply these rules:
+
+- **"Recent"** for NAHL means 1-2 months (roughly 4-8 weeks)
+- **If a threshold was crossed since the prior extreme:** The threshold crossing becomes the new story anchor, not the prior high/low
+  - Example: EMA hit +80 in September, dipped near zero in November, now at +62 → The story is "recovered from November's dip to solidly above +50" — NOT "off from September highs"
+- **If no threshold was crossed since the prior extreme AND it was within 1-2 months:** Referencing that prior reading is valid
+  - Example: EMA hit +80 three weeks ago, now at +62 with no threshold crossing → "Still solid above +50, but pulling back a bit from recent highs"
+
+**You CAN reference older readings** if you label them correctly:
+- ✅ "hasn't reached the high signals from late last year"
+- ✅ "below where it was several months ago"
+- ✅ "not as strong as during the summer peak"
+
+**Do NOT mislabel old readings as "recent":**
+- ❌ "eased from recent highs" — when the high was 3+ months ago
+- ❌ "cooled from higher readings" — implies recent decline when the decline happened months ago
+- ❌ "off from recent highs" — same issue
+- ❌ "pulled back a bit from recent highs" — same issue
+
+The key rule: **Don't call something "recent" if it wasn't.** Acknowledging older context with accurate time references is fine.
+
+**Emergency signal (rare):**
+If the dotted daily line drops below -500, mention this as a severe stress warning — this is the only time to reference the dotted line. Otherwise, ignore it completely.
 
 **Month-to-month guidance:**
 - Crossing below zero from above = shift to cautious stance
@@ -168,50 +262,60 @@ NAHL is a decision signal — communicate what it tells you to DO, not what the 
 
 **Do NOT** just describe what the indicator shows ("more highs than lows"). The reader needs to know what the signal *means for their posture*.
 
-## Charts Using General Interpretation
+## Ratio Charts — Specific Notes
 
-*For the following charts, use the SMA Interpretation Framework above plus general technical analysis knowledge. Specific interpretation rules may be added later.*
+*All ratio charts follow the Ratio Chart Fundamentals and SMA Interpretation Framework above. This section provides chart-specific notes only.*
 
-### VOO:IJR (Large vs Small Cap Ratio)
-- General: Rising = large caps outperforming small caps; Falling = small caps outperforming large caps
-- **Plain language:** Describe as "large companies" vs "smaller companies"
-- *Specific thresholds to be defined*
+### VOO:IJR (Large vs Small Cap)
+- **Numerator:** VOO (S&P 500 large caps)
+- **Denominator:** IJR (S&P 600 small caps)
+- **Plain language:** "large companies" vs "smaller companies"
+- **Remember:** Ratio falling or below MAs = **small caps winning**
 
 ### VOO:QQQ (Broad Market vs Tech-Heavy)
-- General: Rising = broad market outperforming tech-heavy stocks; Falling = tech-heavy stocks outperforming broad market
-- **Plain language:** Describe as "the broad market" vs "tech-heavy stocks"
-- **Do NOT use:** "concentrated," "concentration," "narrow leadership" — these are forbidden abstractions
-- *Specific thresholds to be defined*
+- **Numerator:** VOO (S&P 500 broad market)
+- **Denominator:** QQQ (Nasdaq-100 tech-heavy)
+- **Plain language:** "the broad market" vs "tech-heavy stocks"
+- **Remember:** Ratio falling or below MAs = **tech winning**
+- **Do NOT use:** "concentrated," "concentration," "narrow leadership" — forbidden abstractions
 
 ### VOO:IEF (Stocks vs Bonds)
-- General: Rising = stocks outperforming bonds; Falling = bonds outperforming (flight to safety)
+- **Numerator:** VOO (stocks)
+- **Denominator:** IEF (intermediate Treasury bonds)
+- **Plain language:** "stocks" vs "bonds"
+- **Remember:** Ratio falling or below MAs = **bonds winning** (flight to safety)
 - Part of the "Stocks vs Safety" group — compare with VOO:IAU and VOO:BCI
-- *Specific thresholds to be defined*
 
 ### VOO:IAU (Stocks vs Gold)
-- General: Rising = stocks outperforming gold; Falling = gold outperforming (defensive/inflation hedge gaining)
+- **Numerator:** VOO (stocks)
+- **Denominator:** IAU (gold)
+- **Plain language:** "stocks" vs "gold"
+- **Remember:** Ratio falling or below MAs = **gold winning** (defensive/inflation hedge gaining)
 - Part of the "Stocks vs Safety" group — compare with VOO:IEF and VOO:BCI
-- **Plain language:** Describe as "stocks vs gold" or "gold as a safe haven"
 - Gold often rises during uncertainty, inflation concerns, or loss of confidence in financial assets
-- *Specific thresholds to be defined*
 
 ### VOO:BCI (Stocks vs Commodities)
-- General: Rising = stocks outperforming commodities; Falling = commodities outperforming
+- **Numerator:** VOO (stocks)
+- **Denominator:** BCI (broad commodities)
+- **Plain language:** "stocks" vs "commodities" or "real assets"
+- **Remember:** Ratio falling or below MAs = **commodities winning**
 - Part of the "Stocks vs Safety" group — compare with VOO:IEF and VOO:IAU
-- **Plain language:** Describe as "stocks vs commodities" or "real assets"
 - Commodities often rise during inflationary periods or supply-driven stress
-- *Specific thresholds to be defined*
 
 ### VOO:VEA (US vs International Developed)
-- General: Rising = US outperforming developed international; Falling = developed international outperforming US
+- **Numerator:** VOO (US stocks)
+- **Denominator:** VEA (developed international stocks)
+- **Plain language:** "U.S. stocks" vs "stocks from other wealthy countries"
+- **Remember:** Ratio falling or below MAs = **international developed winning**
 - Part of the "US vs International" group — compare with VOO:VWO
-- *Specific thresholds to be defined*
 
 ### VOO:VWO (US vs Emerging Markets)
-- General: Rising = US outperforming emerging markets; Falling = emerging markets outperforming US
+- **Numerator:** VOO (US stocks)
+- **Denominator:** VWO (emerging market stocks)
+- **Plain language:** "U.S. stocks" vs "emerging market stocks"
+- **Remember:** Ratio falling or below MAs = **emerging markets winning**
 - Part of the "US vs International" group — compare with VOO:VEA
-- Together, VOO:VEA and VOO:VWO answer the question "US or international?" — if both favor international, that's a clear signal; if mixed, explain which part of international is leading
-- *Specific thresholds to be defined*
+- Together, VOO:VEA and VOO:VWO answer "US or international?" — if both favor international, that's a clear signal; if mixed, explain which part of international is leading
 
 ## Adding New Interpretations
 

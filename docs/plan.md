@@ -8,7 +8,7 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
 
 ### Phase 1: Foundation ✅
 - [x] Define project structure
-- [x] Gather sample charts (7 charts covering volatility, breadth, ratios)
+- [x] Gather sample charts (9 charts covering volatility, breadth, ratios)
 - [x] Document tone and style requirements
 - [x] Document output format requirements
 - [x] Create chart interpretation reference guide
@@ -74,11 +74,11 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
 - [x] Add chart permalinks to Detailed Chart Analysis output
 - [x] Test with expanded 9-chart set (V8 complete)
 
-### Phase 9: Flexible Chart Inputs 🔜
-- [ ] Allow Market Look to work with subset of charts (not all 7 required)
-- [ ] Update instructions.md to handle variable chart counts
-- [ ] Test with partial chart sets (e.g., skip IAU if not relevant to portfolio)
-- [ ] Ensure output adapts gracefully to available charts
+### Phase 9: Flexible Chart Inputs ✅
+- [x] Allow Market Look to work with subset of charts (not all 9 required)
+- [x] Update instructions.md to handle variable chart counts (3 minimum, 6 optional)
+- [x] Test with partial chart sets (4-chart test with NAHL, VOO:IEF, VOO:VEA, VOO:IJR)
+- [x] Ensure output adapts gracefully to available charts (V10 complete)
 
 ## Model Requirement
 

@@ -12,7 +12,7 @@ The two capabilities are used sequentially to produce two related Substack artic
 ┌─────────────────────────────────────────────────────────────────┐
 │  Step 1: Market Look                                            │
 │  ────────────────────                                           │
-│  Input:  7 market charts                                        │
+│  Input:  9 market charts                                        │
 │  Output: Market Look report                                     │
 │  Action: Publish as Substack Article #1                         │
 └─────────────────────────────────────────────────────────────────┘

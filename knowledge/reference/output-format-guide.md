@@ -269,7 +269,7 @@ This section provides the supporting evidence behind the Executive Summary.
 
 If a chart is provided that's not on this list, place it in a logical position within this ordering.
 
-**Chart permalinks (include as first line of each chart subsection):**
+**Chart permalinks (include on second line of each chart subsection, after the header):**
 
 | Chart | Permalink |
 |-------|-----------|
@@ -287,16 +287,17 @@ Format: `[Link to chart](permalink)`
 
 **Each chart subsection must follow this structure:**
 
-1. **Link** — First line: `[Link to chart](permalink)` using the permalink from the table above
-2. **Observation paragraphs** — State the observable facts:
-   - For ratio charts: State whether price is above/below the MAs, whether shorter MA is above/below longer MA, and any recent crossings. **Do NOT state the ratio value itself (e.g., "9.65") — it is meaningless. Only the relationship to the MAs matters.**
-   - Example: "Price is above both the 10-week and 40-week MAs. The shorter MA crossed above the longer MA two weeks ago — a bullish signal."
+1. **Header** — Chart name as header (e.g., `### $VIX — Volatility Index`)
+2. **Link** — Second line: `[Link to chart](permalink)` using the permalink from the table above
+3. **Observation paragraphs** — State the observable facts:
+   - For ratio charts: State whether the ratio is above/below the MAs, whether shorter MA is above/below longer MA, and any recent crossings. **Say "ratio" not "price"** for ratio charts. **Do NOT state the ratio value itself (e.g., "9.65") — it is meaningless. Only the relationship to the MAs matters.** See "Ratio Chart Fundamentals" in chart-reference-guide.md for full interpretation rules.
+   - Example: "The ratio is above both the 10-week and 40-week MAs. The shorter MA crossed above the longer MA two weeks ago — a bullish signal for the numerator."
    - For VIX: current level and which range it falls in (12-20, 20-30, etc.)
    - For NAHL: the 13-day EMA value and whether it's above/below key thresholds (0, +50, -50). **Focus on the smoothed EMA only — daily readings are background noise.**
-2. **"What this implies:"** — A labeled paragraph interpreting what the observation means
-3. **"Signal strength:"** — A rating of Weak, Moderate, or Strong with brief explanation
+4. **"What this implies:"** — A labeled paragraph interpreting what the observation means
+5. **"Signal strength:"** — A rating of Weak, Moderate, or Strong with brief explanation
 
-**Grounding rule:** Your interpretation must match your stated observations. If you state that price is above both MAs with a bullish crossover, your interpretation cannot say the trend is bearish or "unchanged."
+**Grounding rule:** Your interpretation must match your stated observations. If you state that the ratio is below both MAs and falling, the DENOMINATOR is outperforming (e.g., VOO:IJR falling = small caps beating large caps). Do not invert this. See "Interpretation Rule — Do Not Invert" in chart-reference-guide.md.
 
 **Each chart discussion should cover:**
 - what the chart represents
