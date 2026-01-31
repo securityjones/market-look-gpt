@@ -4,7 +4,9 @@
 
 This document defines the required structure, content, and presentation for Jeff's monthly portfolio update posts.
 
-The Portfolio Look is a **companion piece** to the Market Look article. It analyzes portfolio performance and positioning, then connects both to the themes from the published Market Look.
+The Portfolio Look is a **companion piece** to the Market Look article. It has two parts:
+1. **Backward-looking:** How did the portfolio perform, and why — in the context of Market Look themes?
+2. **Forward-looking:** Do the recommended allocation changes align with what the Market Look is telling us?
 
 This guide governs what the reader sees.
 
@@ -12,11 +14,11 @@ This guide governs what the reader sees.
 
 The Portfolio Look should open with a framing sentence that:
 - References the Market Look as a published article
-- Sets up the purpose: reviewing portfolio performance and positioning
+- Sets up the two purposes: reviewing past performance AND assessing upcoming changes
 - Makes it natural for Jeff to add an embedded link to "Market Look" when publishing
 
 **Example opening:**
-> "Today we want to look at our portfolio to see how it did for the past month and also how it is positioned relative to this month's Market Look."
+> "Today we want to look at our portfolio — how it performed this past month in the context of this month's Market Look, and whether the recommended changes ahead line up with what the charts are telling us."
 
 The GPT should write this framing naturally — Jeff will add the hyperlink when publishing.
 
@@ -24,38 +26,95 @@ The GPT should write this framing naturally — Jeff will add the hyperlink when
 
 The Portfolio Look requires three inputs:
 
-1. **Market Look article text** — The published Market Look, pasted by the user
-2. **Portfolio screenshot** — From allocatesmartly.com or similar
+1. **Market Look article** — Provided as:
+   - A URL to the published Substack article (e.g., jjfyi.substack.com/p/market-look-...)
+   - An attached .md or .docx file
+   - Pasted text
+2. **Portfolio screenshot** — From allocatesmartly.com or similar (shows new recommendations + changes)
 3. **Benchmark screenshot** — Typically 60/40, same format as portfolio
+
+**Important:** The screenshot shows NEW recommended allocations with ± change indicators. To get the current/past allocation (what was held during the month), calculate: Displayed allocation − Change. See screenshot-reference-guide.md for details.
+
+## Portfolio Context: TAA Strategies
+
+The portfolios analyzed are **Tactical Asset Allocation (TAA) strategies** — rules-based approaches that Jeff follows mechanically with month-end adjustments.
+
+**Background knowledge (not required in output):**
+
+- **Mechanical execution:** The strategy dictates the allocation; Jeff follows it without discretion
+- **Month-end rebalancing:** Changes happen at month-end based on the strategy's rules
+- **Typical TAA tradeoff:** TAAs often slightly underperform in strong bull markets as the cost of avoiding big drawdowns
+- **Diversification-oriented:** TAAs typically spread across asset classes rather than concentrating in one area
+
+This is context for understanding what you're looking at — not a template for commentary. Only mention TAA characteristics if they're relevant to explaining the performance story.
+
+## Execution Steps
+
+Follow these steps to produce the Portfolio Look:
+
+**Part 1 — How We Did (Backward-Looking):**
+1. Extract portfolio name from screenshot (top left)
+2. Extract MTD % from both portfolio and benchmark screenshots (bottom right)
+3. Calculate outperformance/underperformance delta
+4. Read the 12-month performance chart visually (above/below benchmark, divergence, convergence)
+5. **Calculate current/past allocations** from screenshot (Displayed − Change = what we held)
+6. **Categorize each ETF** using ticker-guide.md (do NOT trust shorthand labels on screenshot)
+   - **Critical:** Label EM holdings as "international emerging-market stocks" — not just "emerging markets"
+   - This ensures later steps correctly count them as part of "international"
+7. **Calculate MTD performance** for major holdings using the procedure in "Calculating MTD Performance" section
+8. **Categorize current holdings** — calculate totals for:
+   - U.S. vs International (EM holdings count as international!)
+   - Within International: developed vs international emerging-market
+   - Within U.S.: large vs small
+   - Equity vs bonds/cash/gold/commodities
+9. Identify key themes from the provided Market Look
+10. Connect past performance to Market Look themes (did our tilts help or hurt?)
+
+**Part 2 — What's Changing (Forward-Looking):**
+11. Extract recommended changes from screenshot (the ± change indicators)
+12. Summarize key changes: what's being increased, what's being decreased
+13. Assess whether changes align with or conflict with Market Look signals
 
 ## Output Structure
 
-The output consists of:
-1. **Opening framing sentence** (references Market Look)
-2. **Paragraph 1** — Performance summary (MTD comparison, 12-month chart narrative)
-3. **Paragraph 2** — ETF attribution (which holdings drove gains/losses)
-4. **Paragraph 3** — Positioning and Market Look connection
+The output consists of two parts with **clean section headers** (no parenthetical explanations):
 
-Total length: Opening + 3 paragraphs (approximately 250-350 words total)
+**Part 1 — Backward-Looking**
+1. **Opening framing sentence** — references Market Look, sets up both parts
+2. **How we did** — Performance summary (MTD comparison, 12-month chart narrative)
+3. **Why it happened** — Attribution and Market Look reflection
+
+**Part 2 — Forward-Looking**
+4. **Recommended adjustments** — What's changing and does it align with Market Look?
+
+**Header formatting:** Use the exact headers above as bold text on their own line. Do NOT add parenthetical explanations to headers.
+
+Total length: Opening + 3 sections (approximately 300-400 words total)
 
 ---
 
 ## Opening Framing Sentence
 
 One sentence that:
-- Tells the reader what we're doing (reviewing the portfolio)
+- Tells the reader what we're doing (reviewing performance AND assessing changes)
 - References this month's Market Look
-- Sets up both performance review and positioning analysis
+- Sets up the two-part structure
 
 **Good examples:**
-- "Today we want to look at our portfolio to see how it did for the past month and also how it is positioned relative to this month's Market Look."
-- "Let's check in on the portfolio — how did it do this month, and how does its positioning line up with what we covered in the Market Look?"
+- "Today we want to look at our portfolio — how it performed this past month in the context of this month's Market Look, and whether the recommended changes ahead line up with what the charts are telling us."
+- "Let's check in on the portfolio: how did it do this month, why, and do the upcoming allocation changes make sense given what the Market Look showed us?"
 
 ---
 
-## Paragraph 1 — Performance Summary
+# PART 1 — HOW WE DID (Backward-Looking)
 
-This paragraph covers **what happened** — the numbers and the visual story from the chart.
+This section analyzes the allocation we HELD during the past month.
+
+## How we did (Performance Summary)
+
+**Section header:** Use "**How we did**" as the header (bold, own line). No parenthetical.
+
+This section covers **what happened** — the numbers and the visual story from the chart.
 
 ### Required elements:
 
@@ -66,81 +125,139 @@ This paragraph covers **what happened** — the numbers and the visual story fro
    - Did the portfolio line stay above or below the benchmark?
    - When did it diverge or converge?
    - Where does it stand now relative to where it's been?
+5. **Today's performance** (if shown) — Frame naturally: "Even with the big drop today..." not "give-back right at the end"
 
 ### Example:
 
-> "OptimHybrid is having a strong month so far: it's up +5.80% Month-to-Date, versus the 60/40 benchmark's +0.56%, so it's ahead by about 5.24 percentage points. Over the last 12 months on the chart (Jan 2025 – Jan 2026), OptimHybrid spent much of the year running below the benchmark line after the early-year dip, then started closing the gap in the back half of the year, and finally caught up and finished above the benchmark with a sharp move higher right at the end of the period."
+> **How we did**
+>
+> OptimHybrid finished the month up +5.64% Month-to-Date, versus the 60/40 benchmark's +0.79%, so it ended January ahead by about 4.85 percentage points. The 12-month chart tells a pretty clean story: most of the year the portfolio line ran below the benchmark, then it started closing the gap in the back half of the year – and it finally moved above the benchmark with a sharp jump this month. Even with the big drop today (the screenshot shows Today: -1.90%), the month still delivered outsize gains.
 
 ### Key rules:
 - Use the portfolio name from the screenshot (e.g., "OptimHybrid")
 - State actual numbers, not vague comparisons
 - Describe what you can SEE on the chart — don't invent narrative the chart doesn't show
+- Say "this month" not "very late in the period"
 - Plain language throughout
 
 ---
 
-## Paragraph 2 — ETF Attribution
+## Why it happened (Attribution & Market Look Reflection)
 
-This paragraph explains **where the gains or losses came from** by looking up individual ETF performance.
+**Section header:** Use "**Why it happened**" as the header (bold, own line). No parenthetical.
 
-### Required action:
+This section explains **why** the portfolio performed the way it did, connecting to Market Look themes.
 
-Look up the Month-to-Date performance for each significant ETF in the portfolio. Then report which holdings contributed most to the portfolio's gain or loss.
+### Structure: Lead with category totals, then list ETFs
 
-### What to include:
+**Do NOT** list ETFs one by one without context. **DO** calculate category totals first, connect them to Market Look themes, then list ETFs as supporting detail.
 
-1. **Individual ETF MTD returns** — Look up the major holdings (no need to look up every tiny position)
-2. **Attribution** — Which holdings drove most of the gain/loss? Which lagged or detracted?
-3. **Plain-language summary** — Was it one holding doing the heavy lifting, or spread across several?
+Use ticker-guide.md for ETF categorization and naming. Group holdings to align with Market Look themes.
 
-### Example:
+### Required elements (in this order):
 
-> "Looking at the individual holdings this month, most of the gain came from the gold and bond sleeves. GLD was up around +8% for the month, and TLT gained about +5%, while SPY was roughly flat. So even though stocks are only 25% of this portfolio, the 'ballast' side—gold and long Treasuries—did the heavy lifting this month."
+1. **Category totals that connect to Market Look themes:**
+   - Stocks vs Safety: "The allocation we held was about X% stocks and Y% safety"
+   - U.S. vs International (within stocks): "Within stocks, roughly X% was international and Y% was U.S."
+   - Developed vs Emerging (if meaningful): Split within international
+   - **Connect each total to Market Look theme** as you state it
 
-### Key rules:
-- Look up actual MTD performance for ETFs (use web search if needed)
-- Use **MTD** (Month-to-Date) terminology, not YTD, for consistency with Paragraph 1
-- Keep it plain language — no need for precise weighted contribution math
-- If performance was roughly uniform across holdings, say so
-- If one or two holdings dominated, call them out
-- This helps readers understand WHY the portfolio performed the way it did
+2. **ETF breakdown as supporting detail:**
+   - List the specific ETFs that make up each category
+   - Use plain-language names from ticker-guide.md (e.g., "international emerging-market stocks" not "emerging-market stocks")
 
----
+3. **ETF attribution** (what drove performance):
+   - Calculate MTD % gain for major holdings (see "Calculating MTD Performance" below)
+   - **Show percentages only** — do NOT show the underlying prices (e.g., say "IEMG was up about +7.9% in January" NOT "IEMG was up about +7.9% in January (67.22 → 72.56)")
+   - Which holdings contributed most to gains/losses?
+   - Was it concentrated in one area or spread across several?
 
-## Paragraph 3 — Positioning & Market Look Connection
+4. **Market Look connection** (did positioning help or hurt?):
+   - Connect the performance to Market Look themes
+   - Did our tilts align with what the charts showed?
+   - Did that alignment/misalignment explain our outperformance or underperformance?
 
-This paragraph covers **why** — what the portfolio holds and how that connects to market themes.
+### Example (good — leads with category totals):
 
-### Required elements:
+> **Why it happened**
+>
+> The mix we held was about 82% stocks / 18% safety (cash, a small bond slice, and gold). Within stocks, it was heavily global: roughly 62% international and 20% U.S. – with a big chunk in international emerging-market stocks (IEMG ~33%), plus international developed stocks (IEFA/EWJ/VGK) and international small-company stocks (SCZ). That's basically the same "diversification is paying" message the Market Look described: international stocks doing better than U.S. stocks lately, emerging markets doing better recently, and gold (and even commodities) staying competitive. On the month itself, the big building blocks were genuinely strong: IEMG was up about +7.9% in January; IWM was up about +5.5%; SPY was up about +1.5%; and GLD was up about +12.3% for the month. When your biggest weight is emerging markets and you've also got some gold in the mix, that's exactly the kind of setup that benefits in the current market.
 
-1. **Current positioning summary:**
-   - Call out the biggest weights (with percentages)
-   - Note the equity/bond/cash mix
-   - Identify geographic or style tilts (U.S. vs international, developed vs EM, large vs small)
+### Example (bad — lists ETFs without grouping):
 
-2. **Market Look connection (2-4 sentences):**
-   - Does the portfolio's positioning align with or conflict with the Market Look's themes?
-   - Which themes are relevant: risk vs safety, U.S. vs international, developed vs EM, small vs large, tech-heavy vs broad?
-   - Did the positioning help or hurt recent performance?
-   - Is the portfolio well-positioned going forward based on the Market Look?
+> "The biggest pieces were IEMG (~33.3%) for emerging-markets stocks, IEFA (~13.3%) for developed international stocks, SCZ (10%) for international small-company stocks, IWM (10%) for U.S. small-company stocks..."
+
+The bad example lists ETFs one by one without first stating category totals or connecting to Market Look themes. It also says "emerging-markets stocks" instead of "international emerging-market stocks."
 
 ### Market Look reference style:
 
 Reference the Market Look as a published article:
 
 **Good:**
-- "That mix broadly lines up with this month's Market Look's 'stocks over bonds' backdrop..."
-- "...it also leans into the Market Look's note that small caps may be starting to improve"
-- "Where it's less aligned is the Market Look's point that developed international has been beating emerging markets lately"
+- "This lines up with what the Market Look showed..."
+- "The Market Look noted that international has been beating U.S. stocks — our heavy IEFA weight benefited from exactly that"
+- "Where we were misaligned with the Market Look was..."
 
 **Bad:**
 - "According to the analysis provided..."
 - "The pasted text indicates..."
 - "Based on the report above..."
 
+---
+
+# PART 2 — WHAT'S CHANGING (Forward-Looking)
+
+This section assesses the RECOMMENDED allocation changes.
+
+## Recommended adjustments (Changes Assessment)
+
+**Section header:** Use "**Recommended adjustments**" as the header (bold, own line). No parenthetical.
+
+This section covers **what's being recommended** and whether it aligns with Market Look signals.
+
+### Required elements:
+
+1. **Summarize the key recommended changes:**
+   - What's being increased? What's being decreased?
+   - **Simplify the numbers** — say "drops SPY and IEF to 0%" not "drops SPY to 0% (-10%) and IEF to 0% (-1.7%)"
+   - Only include specific percentages for new positions or major moves
+   - What's the net effect on positioning? (more/less international, more/less defensive, etc.)
+
+2. **Assess alignment with Market Look:**
+   - Do these changes move the portfolio in a direction the Market Look supports?
+   - Are there any changes that conflict with Market Look signals?
+   - Overall, do the recommended changes make sense given what the charts showed?
+
+3. **Plain-language assessment** (not trade advice):
+   - This is observation and analysis, not a recommendation to follow or ignore the changes
+   - If the changes align well, say so
+   - If there's tension with the Market Look, note it
+
 ### Example:
 
-> "Positioning helps explain why this portfolio may behave differently than a plain 60/40. OptimHybrid is equity-heavy and globally tilted, led by IEMG (33.3%) for emerging-markets stocks and IEFA (13.3%) for developed international stocks, plus meaningful small-cap exposure (IWM 10% in U.S. small caps and SCZ 10% in international small caps). On the 'defensive/real asset' side it holds 10% cash, 6.1% gold (GLD), and only 1.7% in intermediate Treasuries (IEF). That mix broadly lines up with this month's Market Look's 'stocks over bonds' backdrop (very little bond exposure here), and it also leans into the report's note that small caps may be starting to improve (IWM/SCZ). Where it's less aligned is the report's point that developed international has been beating emerging markets lately – OptimHybrid's single biggest weight is emerging markets, even though it also carries a sizable developed-international sleeve (IEFA plus Europe/Japan). The chart alone can't prove which sleeve drove this month's jump, but the result is clear: the portfolio's current tilts have translated into a big Month-to-Date lead over the benchmark."
+> **Recommended adjustments**
+>
+> The recommended allocation for this strategy takes a noticeable step away from "plain U.S. stock + bonds." It drops SPY and IEF to 0%, adds a commodities position of 13.3%, and nudges gold and a couple international positions a bit higher. The new mix is closer to ~70% stocks / ~30% safety, but the "safety" is mostly cash + gold + commodities, not bonds. That generally matches the Market Look's nuance: stocks still look fine versus bonds, but gold and commodities have been holding their own – and the strongest "tilt" signal has been global rather than purely U.S.
+
+### Key rules:
+- State the changes factually (what's going up, what's going down)
+- **Simplify change descriptions** — combine similar changes, don't list every +/- delta
+- Connect each significant change to relevant Market Look themes
+- Be honest about alignment and conflicts — don't force a narrative
+- This is analysis, not advice — don't tell the reader whether to follow the recommendations
+- Plain language throughout
+
+---
+
+## Calculating MTD Performance
+
+To calculate Month-to-Date % gain for ETFs or mutual funds, follow the procedure in **mtd-calculation-guide.md**.
+
+The guide defines:
+- Which sites to use (stockanalysis.com primary, Yahoo Finance backup)
+- How to find first/last trading day closing prices
+- The calculation formula
+- How to report results in plain language
 
 ---
 
@@ -151,6 +268,30 @@ Reference the Market Look as a published article:
 - No jargon without plain-language context
 - Same voice as the Market Look (see tone-and-style-guide.md)
 
+### Tight language
+- Say "The mix we held" not "The mix we actually held"
+- Say "this month" not "very late in the period"
+- Say "Even with the big drop today" not "give-back right at the end"
+- Avoid unnecessary qualifiers and hedge words
+
+### Avoid jargon
+- Say "portion" or "part" — NOT "sleeve" (industry jargon)
+- Say "positions" or "holdings" — NOT "exposures"
+- If a term wouldn't be understood by a curious non-investor, don't use it
+
+### Correct categorization language
+- **Always say "international emerging-market stocks"** — never just "emerging markets"
+- This reinforces that EM is a subset of international, not a separate category
+- Wrong: "less international developed, more emerging markets"
+- Right: "shifts within international: less developed, more international emerging-market stocks"
+- Right: "reallocates international exposure from developed to international emerging-market stocks"
+- The top-level split is: U.S. vs International (then within international: developed vs international emerging-market)
+
+### Don't create false tension in alignment analysis
+- If the Market Look says "international is outpacing U.S." — a shift from developed to international emerging-market stocks is NOT tension
+- Both developed and international emerging-market stocks are international — shifting between them maintains international exposure
+- Only flag tension when a change actually moves AGAINST a Market Look signal (e.g., reducing total international when Market Look favors international)
+
 ### ETF references
 - When mentioning ETFs, include what they hold in parentheses
 - Example: "IEMG (33.3%) for emerging-markets stocks"
@@ -160,6 +301,7 @@ Reference the Market Look as a published article:
 - If the chart doesn't support a claim, say so
 - Example: "The chart alone can't prove which sleeve drove this month's jump"
 - Don't fabricate causation
+- If recommended changes conflict with Market Look signals, say so plainly
 
 ### What NOT to include
 - Trade recommendations ("buy X" or "sell Y")
@@ -167,6 +309,7 @@ Reference the Market Look as a published article:
 - Price targets
 - Predictions about future performance
 - Claims not supported by the inputs
+- Advice on whether to follow the recommended changes
 
 ---
 
@@ -174,14 +317,27 @@ Reference the Market Look as a published article:
 
 Before finalizing, confirm:
 
+**Opening:**
 - [ ] Opening references the Market Look naturally
+- [ ] Opening sets up both backward-looking (performance) and forward-looking (changes) analysis
+
+**Part 1 — How We Did:**
 - [ ] Portfolio name matches the screenshot
 - [ ] MTD numbers are stated for both portfolio and benchmark
 - [ ] MTD comparison is calculated correctly
 - [ ] 12-month narrative is grounded in what the chart shows
+- [ ] Current/past allocations are calculated correctly (Displayed − Change)
 - [ ] Biggest holdings are called out with percentages
-- [ ] Equity/bond/cash mix is described
-- [ ] Market Look themes are referenced as a published article
-- [ ] Alignment AND conflicts with Market Look are noted (if both exist)
+- [ ] ETF MTD performance is looked up for attribution
+- [ ] Performance is connected to Market Look themes (did tilts help or hurt?)
+
+**Part 2 — What's Changing:**
+- [ ] Key recommended changes are summarized (what's going up/down)
+- [ ] Changes are assessed against Market Look signals
+- [ ] Both alignment AND conflicts are noted (if both exist)
+- [ ] No advice given on whether to follow the changes
+
+**Throughout:**
+- [ ] Market Look is referenced as a published article
 - [ ] No trade recommendations or predictions
 - [ ] Plain English throughout

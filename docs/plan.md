@@ -41,21 +41,18 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
 - [x] Define portfolio analysis requirements
 - [x] Design output format for portfolio reports (portlook-output-guide.md)
 - [x] Create knowledge file for screenshot interpretation (screenshot-reference-guide.md)
+- [x] Create ticker-guide.md for ETF categorization (~150 ETFs)
+- [x] Create mtd-calculation-guide.md for MTD performance lookup
+- [x] Create knowledge-guide.md as index of all knowledge files
 - [x] Update instructions.md with Task 2 logic
 - [x] Test with sample portfolio data (OptimHybrid, LessBold, Permanent Portfolio)
 - [x] Iterate and refine (ETF attribution, positioning hierarchy, MTD preference)
+- [x] Add TAA strategy context (mechanical execution, month-end rebalancing)
+- [x] Refine output structure (clean headers, tight language, no false tension)
 - [ ] Deploy updated GPT to OpenAI
 - [ ] Final validation with production use
 
-### Phase 6: TAA Recommendation Assessment 🔜 (Next)
-- [ ] Add optional input: TAA recommended changes (e.g., "Move 10% from VOO to BCI")
-- [ ] Design output element assessing how proposed changes align with Market Look themes
-- [ ] Update portlook-output-guide.md with new paragraph structure
-- [ ] Update instructions.md with TAA input handling
-- [ ] Test with sample TAA recommendations
-- [ ] Iterate and refine
-
-### Phase 7: Help/Usage Task 🔜
+### Phase 6: Help/Usage Task 🔜 (Next)
 - [ ] Add Task 3: Help — triggered by "How do I use this?" or similar
 - [ ] Define fixed output with:
   - Permalinks to chart image sources (StockCharts, TradingView, etc.)
@@ -64,7 +61,7 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
   - What inputs are required for each task
 - [ ] Add to instructions.md (minimal thinking needed — mostly static output)
 
-### Phase 8: Expanded Market Look Charts ✅
+### Phase 7: Expanded Market Look Charts ✅
 - [x] Add VOO:IAU ratio chart (stocks vs gold)
 - [x] Add VOO:BCI ratio chart (stocks vs commodities)
 - [x] Update chart-reference-guide.md with interpretation rules for new charts
@@ -74,7 +71,7 @@ Develop **Market Look GPT** — a custom GPT that analyzes stock chart images an
 - [x] Add chart permalinks to Detailed Chart Analysis output
 - [x] Test with expanded 9-chart set (V8 complete)
 
-### Phase 9: Flexible Chart Inputs ✅
+### Phase 8: Flexible Chart Inputs ✅
 - [x] Allow Market Look to work with subset of charts (not all 9 required)
 - [x] Update instructions.md to handle variable chart counts (3 minimum, 6 optional)
 - [x] Test with partial chart sets (4-chart test with NAHL, VOO:IEF, VOO:VEA, VOO:IJR)
@@ -109,6 +106,7 @@ Non-thinking models (ChatGPT 5.2 standard) fail at chart interpretation — they
 | chart-reference-guide.md | Market chart interpretation rules (AUTHORITATIVE) | ✅ V8 |
 | portlook-output-guide.md | Portfolio Look report structure | ✅ V1 |
 | screenshot-reference-guide.md | Portfolio screenshot interpretation (AUTHORITATIVE) | ✅ V1 |
+| ticker-guide.md | ETF categorization, naming, grouping rules | ✅ V1 |
 
 ## GPT Configuration
 

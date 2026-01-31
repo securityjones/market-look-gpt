@@ -412,3 +412,85 @@ Reorganized chart ordering into a logical 3-tier hierarchy:
 - README.md → Phase 9 complete
 
 **Status:** Phase 9 complete. V10 is stable and ready for production use.
+
+---
+
+## January 30, 2026
+
+### Session — Portfolio Look Refinements
+
+**Context:** Extended iteration session refining Portfolio Look output quality based on real test outputs.
+
+**Key changes implemented:**
+
+**1. Screenshot interpretation clarification:**
+- Confirmed that allocations shown are NEW recommendations, not current holdings
+- Formula: Current = Displayed − Change (this was already documented but emphasized)
+
+**2. Output structure refined:**
+- Changed to clean section headers: "How we did", "Why it happened", "Recommended adjustments"
+- No parenthetical explanations in headers
+- Updated examples throughout portlook-output-guide.md
+
+**3. MTD calculation procedure:**
+- Created mtd-calculation-guide.md with step-by-step procedure
+- Primary source: stockanalysis.com (confirmed working via web fetch)
+- Fallback: search for pre-calculated monthly performance
+- Fixed baseline: use previous month's last trading day close (not first day of current month)
+- Added MTD data source status line for output verification
+
+**Data source testing results:**
+| Site | Result |
+|------|--------|
+| stockanalysis.com | ✅ Works |
+| stockcharts.com | ❌ Cloudflare bot protection |
+| Yahoo Finance | ❌ CSP block |
+| Barchart | ❌ Ad tracker redirects |
+| WSJ | ❌ 401 paywall |
+| Morningstar | ❌ No daily price history |
+
+**4. Ticker guide created:**
+- Created ticker-guide.md with ~150 ETFs categorized
+- Eliminates need for per-ETF lookups
+- Categories: U.S. Large/Small/Tech/Growth/Value/Momentum/Dividend, International Developed/Emerging/Small, Bonds, Gold, Commodities, REITs
+
+**5. Language and terminology fixes:**
+- Added jargon rules: "portion/part" not "sleeve", "positions/holdings" not "exposures"
+- Added tight language rules: "The mix we held" not "The mix we actually held"
+- MTD display: show percentages only, no price calculations like "(67.22 → 72.56)"
+- Simplified change descriptions: "drops SPY and IEF to 0%" not every individual delta
+
+**6. International categorization fix (critical):**
+- Rule: Always say "international emerging-market stocks" — never just "emerging markets"
+- This prevents GPT from miscategorizing EM as non-international in later processing steps
+- Added "(EM holdings count as international!)" reminder in execution step 8
+- Added "Don't create false tension" rule — shifting within international is not tension with "international over U.S." theme
+
+**7. TAA strategy context:**
+- Added background knowledge that portfolios are Tactical Asset Allocation strategies
+- Mechanical execution, month-end rebalancing
+- Classic TAA tradeoff: may lag in strong bull markets as cost of avoiding big drawdowns
+- Framed as context, not required commentary
+
+**8. Knowledge guide created:**
+- Created knowledge-guide.md as index of all 8 knowledge files
+- Lists purposes and when to consult each file
+- Identifies AUTHORITATIVE files (chart-reference-guide, screenshot-reference-guide)
+
+**Files created:**
+- knowledge/reference/ticker-guide.md
+- knowledge/reference/mtd-calculation-guide.md
+- knowledge/reference/knowledge-guide.md
+
+**Files updated:**
+- portlook-output-guide.md — Major revisions (structure, examples, language rules, categorization)
+- ticker-guide.md — Hierarchy and categorization rules
+- screenshot-reference-guide.md — Allocation calculation formula emphasis
+
+**Current status:**
+- ✅ Portfolio Look design refined and documented
+- ✅ All knowledge files created and updated
+- ✅ MTD calculation procedure defined
+- ✅ Terminology and categorization rules finalized
+- ⏳ Ready for deployment to OpenAI
+- ⏳ Final production validation pending

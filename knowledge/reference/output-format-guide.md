@@ -334,6 +334,28 @@ Tone, voice, and writing style must follow the document titled tone-and-style-gu
 - Avoids sensationalism and urgency
 - Assumes the reader may be encountering market analysis for the first time
 
+## Validation Checklist
+
+Before finalizing, confirm:
+
+- [ ] Executive Summary has exactly 3 paragraphs with non-overlapping purposes
+- [ ] Para 1 mentions only this month's changes (no chart names, no tickers)
+- [ ] Para 2 grounds context in the past year (no tickers, plain language)
+- [ ] Para 3 walks through each chart area in order with interpretation (not just observation)
+- [ ] Conclusions follow from chart evidence
+- [ ] No forbidden abstraction words (see tone-and-style-guide.md)
+- [ ] Plain language in Exec Summary and What Should We Do (passes Jeff's Mother test)
+- [ ] "What Should We Do?" is ONE paragraph linking specific signals to posture
+- [ ] Each chart subsection in Detailed Analysis has:
+  - Header with chart name
+  - Link to chart (second line)
+  - Observation paragraphs
+  - "What this implies:" paragraph
+  - "Signal strength:" rating (Weak/Moderate/Strong)
+- [ ] Charts appear in correct order (VIX → NAHL → VOO:IEF → VOO:IAU → VOO:BCI → VOO:VEA → VOO:VWO → VOO:IJR → VOO:QQQ)
+- [ ] No summary paragraph at the end of Detailed Chart Analysis
+- [ ] Ratio chart interpretations are not inverted (falling ratio = denominator winning)
+
 ## Final Note
 
 If the charts do not clearly support a strong conclusion, the post should say so plainly.

@@ -13,31 +13,33 @@ Portfolio screenshots from allocatesmartly.com typically contain:
 │  Portfolio Name (top left)                                      │
 │                                                                 │
 │  ┌─────────────────────────────────┐  ┌──────────────────────┐ │
-│  │                                 │  │ Current Holdings     │ │
-│  │    Performance Chart            │  │ ────────────────     │ │
-│  │    (portfolio vs benchmark)     │  │ ETF1  XX.X%          │ │
-│  │                                 │  │ ETF2  XX.X%          │ │
-│  │    1-year timeframe             │  │ ETF3  XX.X%          │ │
+│  │                                 │  │ New Recommended      │ │
+│  │    Performance Chart            │  │ Allocation (±change) │ │
+│  │    (portfolio vs 60/40)         │  │ ────────────────     │ │
+│  │                                 │  │ ETF1  XX.X%  ±X%     │ │
+│  │    1-year timeframe             │  │ ETF2  XX.X%  ±X%     │ │
+│  │    (bottom left area)           │  │ ETF3  XX.X%  ±X%     │ │
 │  │                                 │  │ ...                  │ │
 │  │                                 │  ├──────────────────────┤ │
 │  │                                 │  │ Recent Returns       │ │
 │  │                                 │  │ ────────────────     │ │
 │  │                                 │  │ MTD: +X.XX%          │ │
-│  │                                 │  │ YTD: +X.XX%          │ │
-│  │                                 │  │ 1-Yr: +X.XX%         │ │
+│  │                                 │  │ (bottom right)       │ │
 │  └─────────────────────────────────┘  └──────────────────────┘ │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+**Important:** The allocations shown are NEW recommendations, not current holdings. See "Holdings and Weights" below for how to calculate current/past allocations.
 
 ### Key locations:
 
 | Element | Where to find it |
 |---------|------------------|
 | Portfolio name | Top left corner |
-| Performance chart | Center/left main area |
-| Current holdings & weights | Right panel, upper section |
-| MTD (Month-to-Date) return | Right panel, below holdings |
-| Benchmark comparison line | On the performance chart (typically gray/secondary line) |
+| Performance chart | Bottom left area (1-year vs 60/40 benchmark) |
+| New recommended allocations | Right panel (with ± change indicators) |
+| MTD (Month-to-Date) return | Bottom right area |
+| Benchmark comparison line | On the performance chart (gray/secondary line) |
 
 ---
 
@@ -54,19 +56,38 @@ Portfolio screenshots from allocatesmartly.com typically contain:
 - Extract the exact percentage (e.g., "+5.80%")
 - Include the sign (+ or -)
 
-### Holdings and Weights
-- Listed in the right panel with percentages
-- Format is typically: `TICKER  XX.X%`
-- Extract all holdings and their weights
+### Holdings and Weights (CRITICAL — Read Carefully)
+
+The right panel shows holdings with percentages, but **these are the NEW RECOMMENDED allocations, not the current/past allocations**.
+
+**How to extract the CURRENT allocation (what was held during the month):**
+
+The screenshot shows:
+- A percentage for each holding (this is the **new/recommended** allocation)
+- A change indicator (e.g., "-0.3%" or "+5%") showing the recommended adjustment
+
+**Formula:** Current allocation = Displayed allocation − Change
+
+| Screenshot shows | Change shown | Current/past allocation |
+|------------------|--------------|-------------------------|
+| IEF 11.7% | -0.3% | 11.7 − (−0.3) = **12.0%** |
+| IEFA 22.8% | -18% | 22.8 − (−18) = **40.8%** |
+| VWO 15% | +2% | 15 − (+2) = **13%** |
+
+**Why this matters:** The Portfolio Look analyzes how the portfolio performed *during the month*. We need to report on what we actually held, not what we're about to change to.
+
+**What to extract:**
+- Calculate the current/past allocation for each holding using the formula above
 - Note which are equities, bonds, cash, or other (gold, commodities)
+- Use the **current/past allocations** (not the displayed new recommendations) when describing portfolio positioning
 
 ---
 
-## ETF Lookup Requirement (CRITICAL)
+## ETF Categorization (CRITICAL)
 
 **Do NOT trust the shorthand descriptions on screenshots.**
 
-Screenshots often show abbreviated or misleading labels. You MUST use your knowledge (or web search if needed) to understand what each ETF actually tracks before categorizing it.
+Screenshots often show abbreviated or misleading labels. Use **ticker-guide.md** to categorize each ETF. The guide contains 150+ pre-categorized ETFs with their proper plain-language names.
 
 ### Examples of misleading labels:
 
@@ -82,32 +103,11 @@ Screenshots often show abbreviated or misleading labels. You MUST use your knowl
 - Confusing "emerging market equities" with U.S. equities would produce wrong conclusions
 - The Market Look connection requires accurate categorization
 
-### How to handle ETF lookup:
+### How to categorize ETFs:
 
-1. **First:** For each ETF ticker on the screenshot, recall or look up what index it tracks and what it actually holds
-2. **Then:** Categorize it into one of the categories below based on what you learned
-
-The categorization table below is a reference for common ETFs — but if you encounter an ETF not listed, look it up rather than guessing.
-
-### ETF categorization (common examples):
-
-| Category | Examples |
-|----------|----------|
-| **U.S. Large Cap** | VOO, SPY, IVV, RSP |
-| **U.S. Small Cap** | IWM, IJR, VB |
-| **U.S. Tech-Heavy** | QQQ, QQQM, VGT |
-| **International Developed** | IEFA, VEA, EFA |
-| **International Developed (Single Country)** | EWJ (Japan), EWS (Singapore) |
-| **International Small Cap** | SCZ, VSS |
-| **Emerging Markets** | IEMG, VWO, EEM |
-| **Emerging Markets (Single Country)** | EWZ (Brazil) |
-| **U.S. Bonds (Intermediate)** | IEF, AGG, BND |
-| **U.S. Bonds (Long-Term)** | TLT, VGLT |
-| **International Bonds** | BNDX, IAGG |
-| **Cash/Short-term** | Cash, SHV, BIL |
-| **Commodities** | BCI, PDBC, DBC |
-| **Gold** | GLD, IAU |
-| **Real Estate (REITs)** | SCHH |
+1. **First:** Look up each ETF ticker in **ticker-guide.md**
+2. **Then:** Use the Category and Plain-Language Name from the guide
+3. **If not in ticker-guide.md:** Look up the ETF to determine what it tracks, then categorize it accordingly
 
 ---
 
@@ -215,7 +215,8 @@ Note how this flows: stocks vs safety → U.S. vs international → developed vs
 
 | Pitfall | How to avoid |
 |---------|--------------|
-| Trusting ETF labels on screenshot | Always look up what the ETF actually holds |
+| **Using displayed allocations as current holdings** | The displayed % is the NEW recommendation. Calculate current allocation: Displayed − Change |
+| Trusting ETF labels on screenshot | Use ticker-guide.md for proper categorization |
 | Confusing international with U.S. | Check each ETF's underlying index |
 | Inventing chart narrative | Only describe what you can see |
 | Missing the MTD numbers | Always extract exact percentages from both screenshots |

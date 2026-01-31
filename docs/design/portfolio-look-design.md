@@ -40,9 +40,11 @@ The two capabilities are used sequentially to produce two related Substack artic
 - Screenshot from allocatesmartly.com (or similar)
 - Contains:
   - Portfolio name (top left)
-  - Performance chart vs 60/40 benchmark (1-year timeframe)
-  - Current holdings/weights (top right area)
-  - Recent returns including MTD (right panel, below holdings)
+  - Performance chart vs 60/40 benchmark (1-year timeframe, bottom left)
+  - **New recommended allocations** with ± change indicators (right panel)
+  - Recent returns including MTD (bottom right)
+
+**Important:** The allocations shown are NEW recommendations, not current holdings. To get current/past allocation: Displayed − Change.
 
 ### 3. Benchmark Screenshot
 - Screenshot in the same format as the portfolio
@@ -51,38 +53,53 @@ The two capabilities are used sequentially to produce two related Substack artic
 
 ## Output Structure
 
-**Length:** 1–2 paragraphs
+**Length:** Opening + 3 sections (approximately 300-400 words)
 
-### Paragraph 1 — Performance Summary
+The output has two parts with clean section headers:
+
+### Part 1 — How We Did (Backward-Looking)
+
+**Opening framing sentence** — References Market Look, sets up both performance review and changes assessment
+
+**How we did (Performance Summary)**
 - State portfolio's MTD % from the chart
 - State benchmark's MTD %
 - Compare: outperformed/underperformed by how much (plain language)
-- Describe 12-month visual narrative from the chart:
-  - Did the portfolio line stay above/below benchmark?
-  - When did it diverge or converge?
-  - Where does it stand now?
+- Describe 12-month visual narrative from the chart
 
-### Paragraph 2 — Positioning & Market Look Connection
-- Briefly describe current positioning:
-  - Biggest weights
-  - Cash/bonds vs equities mix
-  - Geographic/style tilts
-- Connect positioning to Market Look themes (2–4 sentences):
-  - Does the portfolio align with or conflict with the Market Look's observations?
-  - Which themes: risk vs safety, US vs international, developed vs EM, small vs large?
-  - Did recent performance benefit from (or suffer from) its tilts?
-  - Is it well-positioned going forward based on the Market Look?
+**Why it happened (Attribution & Market Look Reflection)**
+- Describe current/past positioning (calculated from Displayed − Change)
+- Look up ETF MTD performance to explain what drove gains/losses
+- Connect performance to Market Look themes: did our tilts help or hurt?
+
+### Part 2 — What's Changing (Forward-Looking)
+
+**Recommended adjustments (Changes Assessment)**
+- Summarize key recommended changes (what's going up/down)
+- Assess whether changes align with or conflict with Market Look signals
+- Plain-language analysis (not advice on whether to follow)
+
+**Section headers:** Use "**How we did**", "**Why it happened**", "**Recommended adjustments**" as bold text on their own line. No parenthetical explanations.
 
 ## Key Requirements
+
+### Portfolio Context: TAA Strategies
+
+The portfolios analyzed are Tactical Asset Allocation (TAA) strategies — rules-based approaches that Jeff follows mechanically with month-end adjustments. Key characteristics:
+- Mechanical execution (strategy dictates allocation)
+- Month-end rebalancing
+- Typical TAA tradeoff: may lag in strong bull markets as cost of avoiding big drawdowns
+
+This is background context, not required commentary.
 
 ### ETF Lookup
 The GPT must look up what ETFs actually hold, not rely on shorthand labels.
 
 **Example:**
 - Screenshot says "IEMG - Emerging market equities"
-- Actual: IEMG tracks the MSCI Emerging Markets index (international emerging markets, NOT U.S.)
+- Actual: IEMG tracks the MSCI Emerging Markets index (international emerging-market stocks, NOT U.S.)
 
-This is critical for accurate positioning analysis.
+**Critical terminology:** Always say "international emerging-market stocks" — never just "emerging markets." This ensures EM is correctly counted as part of international exposure.
 
 ### Market Look Reference Style
 Because the Market Look is a published article, references should sound like cross-references between articles:

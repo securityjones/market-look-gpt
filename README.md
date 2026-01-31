@@ -15,8 +15,11 @@ Analyzes stock chart images and produces monthly market analysis reports with:
 ### 2. Portfolio Look Report
 Analyzes portfolio screenshots and produces companion articles with:
 - Performance summary (MTD comparison vs 60/40 benchmark, 12-month chart narrative)
-- ETF attribution (which holdings drove gains/losses)
-- Positioning & Market Look connection (alignment/conflicts with market themes)
+- Attribution (which holdings drove gains/losses, with MTD lookup)
+- Market Look connection (alignment/conflicts with market themes)
+- Recommended changes assessment (do new allocations align with Market Look?)
+
+**Note:** Portfolios are assumed to be TAA (Tactical Asset Allocation) strategies with mechanical month-end execution.
 
 ## Project Structure
 
@@ -54,6 +57,7 @@ Analyzes portfolio screenshots and produces companion articles with:
 | File | Purpose |
 |------|---------|
 | tone-and-style-guide.md | Conversational voice, "we" framing, plain language rules, editorial discipline |
+| knowledge-guide.md | Index of all knowledge files and when to use each |
 
 ### Market Look (Task 1)
 | File | Purpose |
@@ -64,9 +68,10 @@ Analyzes portfolio screenshots and produces companion articles with:
 ### Portfolio Look (Task 2)
 | File | Purpose |
 |------|---------|
-| portlook-output-guide.md | Report structure, Market Look reference style, ETF attribution |
-| screenshot-reference-guide.md | Screenshot layout, ETF lookup requirement, positioning hierarchy |
-
+| portlook-output-guide.md | Report structure, execution steps, validation checklist |
+| screenshot-reference-guide.md | Screenshot layout, allocation calculation (Displayed − Change = current) |
+| ticker-guide.md | ETF categorization and naming (~150 ETFs pre-categorized) |
+| mtd-calculation-guide.md | How to calculate Month-to-Date performance (stockanalysis.com primary) |
 ## Market Charts (Task 1)
 
 **Tier 1 — Macro Conditions:**
@@ -95,25 +100,17 @@ From allocatesmartly.com or similar:
 ✅ **Phase 1-4: Market Look** — Complete & Deployed
 
 ✅ **Phase 5: Portfolio Look** — Complete (pending deployment)
-- [x] Output format designed
-- [x] Knowledge files created
-- [x] Instructions updated
-- [x] Tested with 3 portfolios (OptimHybrid, LessBold, Permanent Portfolio)
+- [x] Output format designed (two-part structure: backward + forward-looking)
+- [x] Knowledge files created (portlook-output-guide, screenshot-reference-guide, ticker-guide, mtd-calculation-guide)
+- [x] TAA strategy context added
+- [x] Language and categorization rules refined
+- [ ] Deploy updated GPT to OpenAI
 
-✅ **Phase 8: Expanded Charts** — Complete
-- [x] Added VOO:IAU (stocks vs gold), VOO:BCI (stocks vs commodities)
-- [x] Reorganized chart hierarchy into 3 tiers
-- [x] Swapped to VOO:VWO (was VEA:VWO), VOO:IJR (was IJR:VOO), VOO:QQQ (was QQQ:RSP)
-- [x] Added chart permalinks to Detailed Chart Analysis
-- [x] Tested with 9-chart set (V8)
+✅ **Phase 7-8: Market Look Enhancements** — Complete
+- Expanded to 9 charts (added VOO:IAU, VOO:BCI)
+- Flexible chart inputs (3 required, 6 optional)
 
-✅ **Phase 9: Flexible Chart Inputs** — Complete
-- [x] 3 minimum required charts (NAHL, VOO:IEF, VOO:VEA), 6 optional
-- [x] Ratio Chart Fundamentals section with interpretation rules
-- [x] NAHL guidance overhaul (not a ratio chart, recency rules, threshold focus)
-- [x] Tested with 4-chart and 9-chart sets (V10)
-
-🔜 **Phase 6: TAA Recommendation Assessment**
+🔜 **Phase 6: Help/Usage Task** — Next
 🔜 **Phase 7: Help/Usage Task**
 
 ## ⚠️ Model Requirement
